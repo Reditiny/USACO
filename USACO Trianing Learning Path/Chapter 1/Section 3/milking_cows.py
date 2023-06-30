@@ -3,7 +3,7 @@ ID: mck15821
 LANG: PYTHON3
 PROG: milk2
 """
-#  Time Complexity: O(n^2)
+#  Time Complexity: O(n)
 fin = open('milk2.in', 'r')
 fout = open("milk2.out", "w")
 number_of_farmers = int(fin.readline())
