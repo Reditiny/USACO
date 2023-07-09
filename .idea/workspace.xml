@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bronze/2015/December/01_fence_painting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2015/December/02_speeding_ticket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2015/December/03_contaminated_milk_with_bug.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2016/December/01_square_pasture.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 3/dual_palindromes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 3/namenum/namenum_big_map.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 3/namenum/namenum_trie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 3/palindromic_squares.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 4/barn_repair.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 4/prime_cryptarithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +33,11 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Bronze/2015/December" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 4" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 4" />
       <recent name="$PROJECT_DIR$/Bronze/2015/December" />
       <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 3" />
       <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 3/namenum" />
