@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 4/barn_repair.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 4/prime_cryptarithm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 4/combination_lock.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
