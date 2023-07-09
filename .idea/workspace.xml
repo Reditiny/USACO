@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Bronze/2015/December/01_fence_painting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2015/December/02_speeding_ticket.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2015/December/03_contaminated_milk_with_bug.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2016/December/01_square_pasture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 3/dual_palindromes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 3/namenum/namenum_big_map.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 3/namenum/namenum_trie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 3/palindromic_squares.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2RqIvdi7ol3Hr9SfOgIFm8eBQhj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Bronze/2015/December" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bronze/2015/December" />
+      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 3" />
+      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 3/namenum" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="" />
+      <created>1687971415745</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687971415745</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
