@@ -32,8 +32,11 @@ for start in range(max_number):
             continue
         result.append([diff, start])
 
+if len(result) == 0:
+    fout.write("NONE\n")
+else:
+    result = sorted(result, key=lambda x: tuple(x))
 
-
-fout.write(f"{solve()}\n")
+    for pair in result:
+        fout.write(f"{pair[1]} {pair[0]}\n")
 fout.close()
-
