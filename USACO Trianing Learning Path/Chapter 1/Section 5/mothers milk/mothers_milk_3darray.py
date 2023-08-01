@@ -17,8 +17,11 @@ def search(state):
         canget[state[2]] = True
     for i in range(3):
         for j in range(3):
-            if i != j:
-                search(pour(state, i, j))
+            if i != j and state[i] != 0 and state[j] < caps[j]:
+                new_state = pour(state.copy(), i, j)
+                if seen[new_state[0]][new_state[1]][new_state[2]] is True:
+                    continue
+                search(new_state)
 
 
 def pour(state, source, target):
@@ -44,8 +47,6 @@ for i in range(caps[0] + 1):
     seen.append(arr1)
 
 search(cur)
-print(canget)
-print(seen)
 
 everTrue = False
 for i in range(len(canget)):
