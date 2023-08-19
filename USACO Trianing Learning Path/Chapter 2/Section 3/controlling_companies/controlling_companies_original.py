@@ -42,6 +42,7 @@ for _ in range(N):
     for k in range(NCOM):
         if controls[k][a - 1]:
             shares[k][b - 1] += p
+    for k in range(NCOM):
         if shares[k][b - 1] > 50:
             add_controller(k, b - 1)
 

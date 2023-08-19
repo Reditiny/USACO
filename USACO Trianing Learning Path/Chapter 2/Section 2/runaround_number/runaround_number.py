@@ -1,28 +1,52 @@
 """
 ID: mck15821
 LANG: PYTHON3
-PROG: subset
+PROG: runround
 """
-fin = open('subset.in', 'r')
-fout = open("subset.out", "w")
+fin = open('runround.in', 'r')
+fout = open("runround.out", "w")
 
 N = int(fin.readline().strip())
+used = [False for i in range(10)]
 
-sum_N = N * (N + 1) // 2
-if sum_N % 2 == 1:
-    fout.write("0\n")
-    fout.close()
-    exit(0)
-target = sum_N // 2
 
-dp = []  # dp[i][j]: number of ways to get sum i using first j numbers
-for i in range(target + 1):
-    dp.append(0)
+def is_runaround(s_list):
+    i = 0
+    while s_list[i] != 'X':
+        old_i = i
+        i = (i + int(s_list[i])) % len(s_list)
+        s_list[old_i] = 'X'
 
-dp[0] = 1
-for i in range(1, N + 1):  # first i numbers
-    for j in range(target, i - 1, -1):  # sum j, stops at i because we can't use i to get sum less than i
-        dp[j] += dp[j - i]
+    # if string is all X and i is 0, then it is a runaround number
+    if i != 0:
+        return False
 
-fout.write(f"{dp[target] // 2}\n")
+    for j in range(len(s_list)):
+        if s_list[j] != 'X':
+            return False
+    return True
+
+
+def permutation(s, used, length, number_of_digits):
+    if length == number_of_digits:
+        if int(s) > N and is_runaround(list(s)):
+            fout.write(f"{s}\n")
+            exit(0)
+        return
+    for i in range(1, 10):
+        if not used[i]:
+            used[i] = True
+            permutation(s + str(i), used, length + 1, number_of_digits)
+            used[i] = False
+
+
+# at most 9 digits long, cannot have 0
+for number_of_digits in range(len(str(N)), len(str(N)) + 2):
+    for digit in range(1, 10):
+        if used[digit]:
+            continue
+        used[digit] = True
+        permutation(str(digit), used, 1, number_of_digits)
+        used[digit] = False
+
 fout.close()

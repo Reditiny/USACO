@@ -15,15 +15,15 @@ for i in range(N):
     numbers.append(num)
     count[num - 1] += 1
 
-start = [0, count[0], count[0] + count[1]] # in the final ordered list, the start location of 1, 2 and 3
-from_and_to = [[0, 0], [0, 0], [0, 0]]
+start = [0, count[0], count[0] + count[1]]  # in the final ordered list, the start location of 1, 2 and 3
+from_and_to = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
 # for each 1, 2 and 3...
 for i in range(3):
-    # for each occurence of i...
+    # for each occurrence of i...
     for j in range(count[i]):
-        total = numbers[start[i] + j] # the nth number should falls in i bucket
-        from_and_to[total - 1][i] += 1
+        index = numbers[start[i] + j] - 1  # the nth number should falls in i bucket
+        from_and_to[index][i] += 1
 
 swap_count = 0
 
@@ -37,14 +37,7 @@ for i in range(3):
     from_and_to[to_bucket][from_bucket] -= diff
 
 # cycles
-swap_count += from_and_to[0][1] + from_and_to[0][2]
+swap_count += (from_and_to[0][1] + from_and_to[0][2]) * 2
 
-not_matched_count = 0
-# remainders are pairs of swaps to correct 3 numbers
-for i in range(N):
-    if have[i] != want[i]:
-        not_matched_count += 1
-
-swap_count += not_matched_count // 3 * 2
 fout.write(f"{swap_count}\n")
 fout.close()

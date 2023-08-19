@@ -3,6 +3,8 @@ ID: mck15821
 LANG: PYTHON3
 PROG: concom
 """
+import sys
+sys.setrecursionlimit(2000)
 fin = open('concom.in', 'r')
 fout = open("concom.out", "w")
 

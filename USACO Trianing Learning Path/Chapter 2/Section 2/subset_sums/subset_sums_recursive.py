@@ -20,6 +20,7 @@ for i in range(target + 1):
     results.append([-1 for j in range(N + 1)])
 
 
+# n: target sum, k: number of numbers
 def find(n, k):
     if n < 0 or k < 0:
         return 0

@@ -8,49 +8,23 @@ fout = open("frac1.out", "w")
 
 N = int(fin.readline().strip())
 
-# if found a prime number than mark all times as non-prime
-def sieveOfEratosthenes(n):
-    prime_number = []
-    prime = [True for _ in range(n + 1)]
-    p = 2
-    while p * p <= n:
-        if prime[p]:
-            for i in range(2 * p, n + 1, p):
-                prime[i] = False
-        p += 1
-    for i in range(2, n + 1):
-        if prime[i] is True:
-            prime_number.append(i)
-    # return a list of prime number less than n
-    return prime_number
+
+def is_coprime(a, b):
+    r = a % b
+    while r != 0:
+        a = b
+        b = r
+        r = a % b
+    return b == 1
 
 
-primes = sieveOfEratosthenes(160)
 fracs = []
-for top in range(1, N + 1):
-    for bottom in range(0, i + 1):
-        for prime in primes:
-            while top % prime == 0 and bottom % prime == 0:
-                top //= prime
-                bottom //= prime
-            if top < prime or bottom < prime:
-                break
-        processed = False
-        temp = [top, bottom]
-        for k in range(len(fracs)):
-            a = fracs[k][0] * bottom
-            b = fracs[k][1] * top
-            # fracs[k] > bottom / top, insert bottom / top before fracs[k]
-            if a > b:
-                fracs.insert(k, temp)
-                processed = True
-                break
-            # already exists, no need to insert
-            elif a == b:
-                processed = True
-                break
-        if not processed:
-            fracs.append(temp)
+for bottom in range(1, N + 1):
+    for top in range(0, bottom + 1):
+        if is_coprime(top, bottom):
+            fracs.append([top, bottom])
+
+fracs.sort(key=lambda x: x[0] / x[1])
 
 for frac in fracs:
     fout.write(f"{frac[0]}/{frac[1]}\n")

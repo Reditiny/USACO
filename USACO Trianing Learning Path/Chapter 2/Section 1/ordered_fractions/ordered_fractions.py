@@ -27,8 +27,10 @@ def sieveOfEratosthenes(n):
 
 primes = sieveOfEratosthenes(160)
 fracs = []
-for top in range(1, N + 1):
-    for bottom in range(0, i + 1):
+for i in range(1, N + 1):
+    for j in range(0, i + 1):
+        top = j
+        bottom = i
         for prime in primes:
             while top % prime == 0 and bottom % prime == 0:
                 top //= prime

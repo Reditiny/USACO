@@ -1,9 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 4/combination_lock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/cow_pedigrees/WIP_cow_pedigrees_tree_serialization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/longest_prefix/longest_prefix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/longest_prefix/longest_prefix_timeout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/longest_prefix/longest_prefix_trie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/longest_prefix/prefix.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/longest_prefix/prefix.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems/money.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems/money.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems/money_systems_dp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems/money_systems_recursion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2016/January/01_promotion_counting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2016/January/01_promotion_counting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2016/January/02_angry_cows.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2016/January/02_angry_cows.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2017/December/01_blocked_billboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2017/December/01_blocked_billboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/01_bucket_bridge.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2019/US Open/01_bucket_bridge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/hamming_codes/hamming.in" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/hamming_codes/hamming.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/hamming_codes/hamming.out" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/hamming_codes/hamming.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/hamming_codes/hamming_codes.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/hamming_codes/hamming_codes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/healthy_holsteins/healthy_holsteins.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/healthy_holsteins/healthy_holsteins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/ordered_fractions/ordered_fractions.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/ordered_fractions/ordered_fractions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/ordered_fractions/ordered_fractions_coprime.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/ordered_fractions/ordered_fractions_coprime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/ordered_fractions/ordered_fractions_recursion.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/ordered_fractions/ordered_fractions_recursion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/sorting_a_three_valued_sequence/sorting_a_three_valued_sequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/sorting_a_three_valued_sequence/sorting_a_three_valued_sequence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/sorting_a_three_valued_sequence/sorting_a_three_valued_sequence_optimized_only_count.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/sorting_a_three_valued_sequence/sorting_a_three_valued_sequence_optimized_only_count.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/preface_numbering/preface_numbering.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/preface_numbering/preface_numbering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/runaround_number/runaround_number.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/runaround_number/runaround_number.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/subset_sums/subset_sums_1d_dp.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/subset_sums/subset_sums_1d_dp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/subset_sums/subset_sums_2d_dp.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/subset_sums/subset_sums_2d_dp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/subset_sums/subset_sums_recursive.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/subset_sums/subset_sums_recursive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies/concom.in" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies/concom.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies/concom.out" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies/concom.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies/controlling_companies_max_recursion_ bug.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies/controlling_companies_max_recursion_ bug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies/controlling_companies_max_recursion_ bug_fix.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies/controlling_companies_max_recursion_ bug_fix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies/controlling_companies_original.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies/controlling_companies_original.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/cow_pedigrees/cow_pedigrees.py" beforeDir="false" afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/cow_pedigrees/cow_pedigrees.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,27 +56,176 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2RqIvdi7ol3Hr9SfOgIFm8eBQhj" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 4" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 4" />
-      <recent name="$PROJECT_DIR$/Bronze/2015/December" />
-      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 3" />
-      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 3/namenum" />
+      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/longest_prefix" />
+      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems" />
+      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies" />
+      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/party_lamps" />
+      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/runaround_number" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/ordered_fractions" />
+      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 6/number_triangles" />
+      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 5/mothers milk" />
+      <recent name="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 5/ariprog" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.runaround_number">
+    <configuration name="controlling_companies_max_recursion_ bug" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="USACO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies/controlling_companies_max_recursion_ bug.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="controlling_companies_max_recursion_ bug_fix" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="USACO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies/controlling_companies_max_recursion_ bug_fix.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="longest_prefix_timeout" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="USACO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/longest_prefix" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/longest_prefix/longest_prefix_timeout.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="money_systems_dp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="USACO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems/money_systems_dp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="money_systems_recursion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="USACO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems/money_systems_recursion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="runaround_number" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="USACO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/runaround_number" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/runaround_number/runaround_number.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -50,8 +235,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687971415745</updated>
+      <workItem from="1690709773746" duration="616000" />
+      <workItem from="1690710433661" duration="25111000" />
+      <workItem from="1691148262372" duration="12135000" />
+      <workItem from="1691770563086" duration="12348000" />
+      <workItem from="1692115673012" duration="28944000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -66,5 +259,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/USACO$controlling_companies_debugging.coverage" NAME="controlling_companies_debugging Coverage Results" MODIFIED="1692411683484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies" />
+    <SUITE FILE_PATH="coverage/USACO$controlling_companies_max_recursion__bug_fix.coverage" NAME="controlling_companies_max_recursion_ bug_fix Coverage Results" MODIFIED="1692415953258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies" />
+    <SUITE FILE_PATH="coverage/USACO$mothers_milk_3darray_dp.coverage" NAME="mothers_milk_3darray_dp Coverage Results" MODIFIED="1690729263750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 5/mothers milk" />
+    <SUITE FILE_PATH="coverage/USACO$runaround_number.coverage" NAME="runaround_number Coverage Results" MODIFIED="1692289442288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/runaround_number" />
+    <SUITE FILE_PATH="coverage/USACO$longest_prefix_timeout.coverage" NAME="longest_prefix_timeout Coverage Results" MODIFIED="1692429557342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/longest_prefix" />
+    <SUITE FILE_PATH="coverage/USACO$controlling_companies_max_recursion__bug2.coverage" NAME="controlling_companies_max_recursion_ concised Coverage Results" MODIFIED="1692415183056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies" />
+    <SUITE FILE_PATH="coverage/USACO$controlling_companies.coverage" NAME="controlling_companies_max_recursion_ bug Coverage Results" MODIFIED="1692415872795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies" />
+    <SUITE FILE_PATH="coverage/USACO$hamming_codes.coverage" NAME="hamming_codes Coverage Results" MODIFIED="1691854799318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/hamming_codes" />
+    <SUITE FILE_PATH="coverage/USACO$money_systems.coverage" NAME="money_systems_recursion Coverage Results" MODIFIED="1692426323544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems" />
+    <SUITE FILE_PATH="coverage/USACO$money_systems_dp.coverage" NAME="money_systems_dp Coverage Results" MODIFIED="1692418413216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems" />
   </component>
 </project>

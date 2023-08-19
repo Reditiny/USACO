@@ -10,6 +10,7 @@ N = int(fin.readline().strip())
 NCOM = 100
 shares = []
 controls = []
+# count = [0]
 
 for i in range(100):
     shares.append([0 for j in range(100)])
@@ -22,10 +23,13 @@ def add_controller(i, j):
     if controls[i][j]:
         return
     controls[i][j] = True
+    # count[0] += 1
+    # print(i, j, count)
 
     # i controls j, so i controls all companies that j controls
     for k in range(NCOM):
         shares[i][k] += shares[j][k]
+        # ATTENTION: the sequence of the following two if statements matters
         if shares[i][k] > 50:
             add_controller(i, k)
         # k controls i, so k also controls j
