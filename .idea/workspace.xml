@@ -5,22 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bronze/2015/December/02_speeding_ticket/02_speeding_ticket_iteration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2015/December/02_speeding_ticket/02_speeding_ticket_loop.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2016/December/03_the_cow_signal/03_the_cow_signal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2017/December/01_blocked_billboard/01_blocked_billboard_slow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2017/US Open/01_the_lost_cow/01_the_lost_cow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2017/US Open/01_the_lost_cow/lostcow.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2018/December/01_mixing_milk/01_mixing_milk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/February/03_measuring_traffic/03_measuring_traffic_bug.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/February/03_measuring_traffic/03_measuring_traffic_bug_fixed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/January/01_shell_game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 4/overfencing/overfencing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2016/December/02_block_game/02_block_game.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2016/February/02_circular_barn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe/01_team_tic_tac_toe_with_bug.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe/tttt.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe/tttt.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2015/December/01_fence_painting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2015/December/01_fence_painting/01_fence_painting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2015/December/02_speeding_ticket.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2015/December/03_contaminated_milk_with_bug.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2015/December/03_contaminated_milk/03_contaminated_milk_with_bug.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2017/December/01_blocked_billboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2017/December/01_blocked_billboard/01_blocked_billboard_fast.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,17 +38,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/shiyuan/Desktop/科技教育/计算机教育/USACO/USACO/Bronze/2017/US Open/01_the_lost_cow",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/shiyuan/Desktop/科技教育/计算机教育/USACO/USACO/Bronze/2017/US Open/01_the_lost_cow&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Bronze/2017/US Open/01_the_lost_cow" />
@@ -75,7 +65,30 @@
       <recent name="$PROJECT_DIR$/Bronze/2017/December/01_blocked_billboard" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.01_the_lost_cow">
+  <component name="RunManager" selected="Python.01_team_tic_tac_toe_with_bug">
+    <configuration name="01_team_tic_tac_toe_with_bug" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="USACO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe/01_team_tic_tac_toe_with_bug.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="01_the_lost_cow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="USACO" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,29 +127,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bronze/2019/February/03_measuring_traffic/03_measuring_traffic_bug_fixed.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="longest_prefix_trie_max_recursion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="USACO" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.10" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/longest_prefix" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/longest_prefix/longest_prefix_trie_max_recursion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -216,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.01_team_tic_tac_toe_with_bug" />
         <item itemvalue="Python.01_the_lost_cow" />
         <item itemvalue="Python.03_measuring_traffic_bug_fixed" />
         <item itemvalue="Python.overfencing" />
         <item itemvalue="Python.money_systems_recursion_WIP" />
-        <item itemvalue="Python.longest_prefix_trie_max_recursion" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +228,8 @@
       <workItem from="1691770563086" duration="12348000" />
       <workItem from="1692115673012" duration="28944000" />
       <workItem from="1692436335632" duration="1333000" />
-      <workItem from="1692499585711" duration="17536000" />
+      <workItem from="1692499585711" duration="17838000" />
+      <workItem from="1693135714668" duration="3762000" />
     </task>
     <servers />
   </component>
@@ -270,6 +261,7 @@
     <SUITE FILE_PATH="coverage/USACO$money_systems.coverage" NAME="money_systems_recursion Coverage Results" MODIFIED="1692426323544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems" />
     <SUITE FILE_PATH="coverage/USACO$01_the_lost_cow.coverage" NAME="01_the_lost_cow Coverage Results" MODIFIED="1692637806435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2017/US Open/01_the_lost_cow" />
     <SUITE FILE_PATH="coverage/USACO$mothers_milk_3darray_dp.coverage" NAME="mothers_milk_3darray_dp Coverage Results" MODIFIED="1690729263750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 5/mothers milk" />
+    <SUITE FILE_PATH="coverage/USACO$01_team_tic_tac_toe.coverage" NAME="01_team_tic_tac_toe Coverage Results" MODIFIED="1693152280228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe" />
     <SUITE FILE_PATH="coverage/USACO$longest_prefix_timeout.coverage" NAME="longest_prefix_timeout Coverage Results" MODIFIED="1692436904412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/longest_prefix" />
     <SUITE FILE_PATH="coverage/USACO$03_measuring_traffic.coverage" NAME="03_measuring_traffic Coverage Results" MODIFIED="1692536798576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2019/February" />
     <SUITE FILE_PATH="coverage/USACO$controlling_companies_max_recursion__bug2.coverage" NAME="controlling_companies_max_recursion_ concised Coverage Results" MODIFIED="1692415183056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies" />
