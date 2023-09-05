@@ -13,10 +13,12 @@ for i in range(N):
     rooms.append(int(fin.readline().strip()))
 
 result = 10 ** 9
+# pick the start point
 for i in range(N):
     acc = 0
     for j in range(N):
-        acc += rooms[(i + j) % N] * j
+        acc += rooms[(i + j) % N] * j  # number of doors the cows passed
     result = min(result, acc)
 
+fout.write(f"{result}\n")
 fout.close()
