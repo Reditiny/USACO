@@ -14,6 +14,12 @@ for i in range(a, b + 1):
     road[i] = 1
 for i in range(c, d + 1):
     road[i] = 1
-print(road)
-fout.write(f"{sum(road) - 1}\n")
+
+counter = 0
+for i in range(1, 101):
+    if road[i] == 1:
+        counter += 1
+    elif road[i - 1] == 1:
+        counter -= 1
+fout.write(f"{counter}\n")
 fout.close()
