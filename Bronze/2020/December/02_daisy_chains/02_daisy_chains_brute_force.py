@@ -3,7 +3,7 @@ ID: mck15821
 LANG: PYTHON3
 PROG: Daisy Chains
 """
-
+# http://www.usaco.org/index.php?page=viewproblem2&cpid=1060
 N = int(input())
 P = list(map(int, input().split()))
 
