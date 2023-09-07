@@ -26,19 +26,21 @@ def check_win(board):
 winners = check_win(board)
 single_wins = 0
 team_wins = 0
-visited = set()
+visited_single = set()
+visited_team = set()
 for winner in winners:
-
-    winner = "".join(sorted(winner))
     winner_counter = Counter(winner)
-    if winner in visited:
-        continue
     if len(winner_counter) == 1:
+        if winner in visited_single:
+            continue
         single_wins += 1
+        visited_team.add(winner)
     elif len(winner_counter) == 2:
+        key_list = list(winner_counter.keys())
+        if tuple(key_list) in visited_team or tuple(key_list[::-1]) in visited_team:
+            continue
         team_wins += 1
-    visited.add(winner)
-    print(visited)
+        visited_team.add(tuple(key_list))
 
 fout.write(f"{single_wins}\n{team_wins}\n")
 fout.close()
