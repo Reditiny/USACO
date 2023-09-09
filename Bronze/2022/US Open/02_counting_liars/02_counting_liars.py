@@ -1,7 +1,7 @@
 """
 ID: mck15821
 LANG: PYTHON3
-PROG: Daisy Chains
+PROG: Counting liars
 """
 # http://usaco.org/index.php?page=viewproblem2&cpid=1228
 pos = []

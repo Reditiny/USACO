@@ -18,6 +18,7 @@ for i in range(M):
     found = False
     for j in range(N):
         spotted.add(genes[j][i])
+    # if character existed in spotted, and also in unspotted, then break
     for j in range(N, 2 * N):
         if genes[j][i] in spotted:
             found = True
