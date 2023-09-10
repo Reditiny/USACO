@@ -4,7 +4,7 @@ LANG: PYTHON3
 PROG: citystate
 """
 # http://www.usaco.org/index.php?page=viewproblem2&cpid=667
-fin = open('citystate_silver_dec16/5.in', 'r')
+fin = open('citystate.in', 'r')
 fout = open("citystate.out", "w")
 N = int(fin.readline().strip())
 
