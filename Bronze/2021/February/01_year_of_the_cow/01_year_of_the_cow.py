@@ -20,7 +20,7 @@ years = {
     "Rat": 11
 }
 
-cows = {"bessie": (0, "Ox")}  # absolute number, zodiac
+cows = {"Bessie": (0, "Ox")}  # absolute number, zodiac
 
 N = int(input())
 for _ in range(N):
@@ -28,8 +28,15 @@ for _ in range(N):
     target, source = record[0], record[-1]
     target_zodiac = record[4]
     source_age, source_zodiac = cows[source]
-    age_diff = years[source_zodiac] - years[target_zodiac]
     if record[3] == "previous":
-        cows[target] = (source_age + years[cows[source][1]] - years[cows[target][1]], target_zodiac)
+        age_diff = years[source_zodiac] - years[target_zodiac]
+        if age_diff <= 0:
+            age_diff += 12
+        cows[target] = (cows[source][0] - age_diff, target_zodiac)
     else:
-        cows[target] = (cows[source] + 12 + target_zodiac_rank) % 12
+        age_diff = years[target_zodiac] - years[source_zodiac]
+        if age_diff <= 0:
+            age_diff += 12
+        cows[target] = (cows[source][0] + age_diff, target_zodiac)
+    if target == "Elsie":
+        print(abs(cows[target][0]))
