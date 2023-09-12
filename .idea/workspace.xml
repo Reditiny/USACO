@@ -5,33 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/02_air_conditioning_backtrack_memorized.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/02_air_conditioning_backtrack_timeout_factorial_complexity.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/02_air_conditioning_memo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/1.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/1.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/10.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/10.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/11.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/11.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/2.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/2.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/3.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/3.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/4.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/4.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/5.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/5.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/6.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/6.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/7.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/7.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/8.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/8.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/9.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning/prob2_bronze_jan23/9.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/1.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/1.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/10.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/10.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/2.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/2.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/3.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/3.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/4.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/4.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/5.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/5.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/6.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/6.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/7.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/7.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/8.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/8.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/9.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/02_where_am_i/whereami_bronze_dec19/9.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/03_livestock_lineup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/03_livestock_lineup_optimized.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/1.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/1.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/10.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/10.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/2.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/2.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/3.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/3.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/4.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/4.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/5.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/5.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/6.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/6.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/7.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/7.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/8.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/8.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/9.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/lineup_bronze_dec19/9.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2020/February/01_triangles/01_triangles.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2020/February/01_triangles/01_triangles.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +83,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/shiyuan/Desktop/科技教育/计算机教育/USACO/USACO/Bronze/2023/January/02_air_conditioning",
+    "last_opened_file_path": "/Users/shiyuan/Desktop/科技教育/计算机教育/USACO/USACO/Bronze/2019/December/03_livestock_lineup",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -77,11 +93,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup" />
       <recent name="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning" />
       <recent name="$PROJECT_DIR$/Bronze/2020/February/01_triangles" />
       <recent name="$PROJECT_DIR$/Bronze/2017/February/03_why_did_the_cow_cross_the_road_iii" />
       <recent name="$PROJECT_DIR$/Bronze/2017/February" />
-      <recent name="$PROJECT_DIR$/Silver/2016/December/02_cities_and_states" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Bronze/2021/February/01_year_of_the_cow" />
@@ -91,7 +107,7 @@
       <recent name="$PROJECT_DIR$/Bronze/2015/December/02_speeding_ticket" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.02_air_conditioning_backtrack_timeout_factorial_complexity">
+  <component name="RunManager" selected="Python.03_livestock_lineup">
     <configuration name="02_air_conditioning_backtrack_timeout_factorial_complexity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="USACO" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,28 +144,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bronze/2016/January/02_angry_cows/02_angry_cows.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="02_cities_and_states_bug_resolved" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="USACO" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Silver/2016/December/02_cities_and_states" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Silver/2016/December/02_cities_and_states/02_cities_and_states_bug_resolved.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -202,6 +196,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="03_livestock_lineup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="USACO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup/03_livestock_lineup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="runaround_number" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="USACO" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -226,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.03_livestock_lineup" />
         <item itemvalue="Python.02_air_conditioning_backtrack_timeout_factorial_complexity" />
         <item itemvalue="Python.02_angry_cows" />
         <item itemvalue="Python.02_cities_and_states_trie" />
         <item itemvalue="Python.02_cities_and_states_timeout" />
-        <item itemvalue="Python.02_cities_and_states_bug_resolved" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +267,7 @@
       <workItem from="1692499585711" duration="17838000" />
       <workItem from="1693135714668" duration="3762000" />
       <workItem from="1693755129387" duration="7450000" />
-      <workItem from="1694016128987" duration="43916000" />
+      <workItem from="1694016128987" duration="47544000" />
     </task>
     <servers />
   </component>
@@ -275,6 +291,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/USACO$overfencing.coverage" NAME="overfencing Coverage Results" MODIFIED="1692504321466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 4/overfencing" />
     <SUITE FILE_PATH="coverage/USACO$controlling_companies_debugging.coverage" NAME="controlling_companies_debugging Coverage Results" MODIFIED="1692411683484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies" />
+    <SUITE FILE_PATH="coverage/USACO$03_livestock_lineup.coverage" NAME="03_livestock_lineup Coverage Results" MODIFIED="1694507087889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup" />
     <SUITE FILE_PATH="coverage/USACO$controlling_companies_max_recursion__bug_fix.coverage" NAME="controlling_companies_max_recursion_ bug_fix Coverage Results" MODIFIED="1692415953258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies" />
     <SUITE FILE_PATH="coverage/USACO$02_angry_cows.coverage" NAME="02_angry_cows Coverage Results" MODIFIED="1694364154184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2016/January/02_angry_cows" />
     <SUITE FILE_PATH="coverage/USACO$runaround_number.coverage" NAME="runaround_number Coverage Results" MODIFIED="1692289442288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/runaround_number" />
