@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/03_watching_mooloo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/1.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/1.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/10.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/10.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/11.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/11.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/12.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/12.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/2.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/2.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/3.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/3.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/4.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/4.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/5.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/5.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/6.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/6.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/7.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/7.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/8.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/8.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/9.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo/prob3_bronze_feb23/9.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2017/January/03_cow_tipping/03_cow_tipping.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -250,7 +226,7 @@
       <workItem from="1692499585711" duration="17838000" />
       <workItem from="1693135714668" duration="3762000" />
       <workItem from="1693755129387" duration="7450000" />
-      <workItem from="1694016128987" duration="56779000" />
+      <workItem from="1694016128987" duration="57858000" />
     </task>
     <servers />
   </component>
