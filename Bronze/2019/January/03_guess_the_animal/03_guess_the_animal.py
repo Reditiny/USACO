@@ -1,11 +1,11 @@
 """
 ID: mck15821
 LANG: PYTHON3
-PROG: cownomics
+PROG: guess
 """
-# http://www.usaco.org/index.php?page=viewproblem2&cpid=739
-fin = open('cownomics.in', 'r')
-fout = open("cownomics.out", "w")
+# http://www.usaco.org/index.php?page=viewproblem2&cpid=893
+fin = open('guess.in', 'r')
+fout = open("guess.out", "w")
 
 N, M = list(map(int, fin.readline().strip().split()))
 genes = []

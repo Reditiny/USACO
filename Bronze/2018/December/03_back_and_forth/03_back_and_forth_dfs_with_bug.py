@@ -6,7 +6,7 @@ PROG: backforth
 from collections import Counter
 
 # http://www.usaco.org/index.php?page=viewproblem2&cpid=857
-fin = open('backforth_bronze_dec18/4.in', 'r')
+fin = open('backforth_bronze_dec18/2.in', 'r')
 fout = open("backforth.out", "w")
 
 barn1 = dict(Counter(list(map(int, fin.readline().strip().split()))))
