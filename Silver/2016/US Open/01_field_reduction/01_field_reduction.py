@@ -1,29 +1,40 @@
 """
 ID: mck15821
 LANG: PYTHON3
-PROG: citystate
+PROG: reduce
 """
-# http://www.usaco.org/index.php?page=viewproblem2&cpid=667
-fin = open('citystate.in', 'r')
-fout = open("citystate.out", "w")
+# http://www.usaco.org/index.php?page=viewproblem2&cpid=642
+fin = open('reduce.in', 'r')
+fout = open("reduce.out", "w")
 N = int(fin.readline().strip())
+cows = []
 
-city_map = {}
 for _ in range(N):
-    city, state = fin.readline().strip().split()
-    # two city need to come from different states
-    if city[:2] == state:
-        continue
-    key_str = city[:2] + state
-    if key_str not in city_map:
-        city_map[key_str] = 0
-    city_map[key_str] += 1
+    cows.append(list(map(int, fin.readline().strip().split())))
 
-result = 0
-for pair, count in city_map.items():
-    reversed_pair = pair[2:] + pair[:2]
-    if reversed_pair in city_map:
-        result += count * city_map[reversed_pair]
+cows_sort_by_x = cows.sort()
+cows_sort_by_y = cows.sort(lambda x: x[1])
+
+# [head, head, head], [head, head, tail], [head, tail, tail], [tail, tail, tail]
+# [head, head], [head, tail], [tail, tail]
+# head, tail
+pick = {
+    0: [],
+    1: [[0], [-1]],
+    2: [[0,1], [0, -1], [-2, -1]],
+    3: [[0, 1, 2], [0, 1, -1], [0, -2, -1], [-3, -2, -1]]
+}
+
+
+
+for n_in_x in range(1, 4):
+    n_in_y = 3 - n_in_x
+    temp_cows = cows.copy()
+    for combinations in pick[n_in_x]:
+        for index in combinations:
+            temp_cows.remove(cows_sort_by_x[index])
+
+
 
 fout.write(f"{result // 2}\n")
 fout.close()
