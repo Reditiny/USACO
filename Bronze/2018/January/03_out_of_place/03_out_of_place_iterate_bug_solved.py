@@ -11,6 +11,7 @@ places = []
 for _ in range(N):
     places.append(int(fin.readline().strip()))
 
+# find Bessie
 if places[0] > places[1]:
     bessie = 0
     direction = 1
@@ -26,7 +27,6 @@ else:
             elif places[i - 1] > places[i + 1]:
                 bessie = i - 1
                 direction = 1
-print(bessie)
 
 count = 0
 if direction > 0:
@@ -39,6 +39,7 @@ if direction > 0:
         while i < N and places[i] == places[current_i]:
             i += 1
         count += 1
+
 else:
     i = bessie - 1
     while i >= 0:
@@ -48,9 +49,6 @@ else:
         while i >= 0 and places[i] == places[current_i]:
             i -= 1
         count += 1
+
 fout.write(f"{count}")
-# if count == 1:
-#     fout.write(f"{count}")
-# else:
-#     fout.write(f"{count - 1}\n")
 fout.close()

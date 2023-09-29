@@ -7,25 +7,25 @@ PROG: guess
 fin = open('guess.in', 'r')
 fout = open("guess.out", "w")
 
-N, M = list(map(int, fin.readline().strip().split()))
-genes = []
-for _ in range(2 * N):
-    genes.append(fin.readline().strip())
+N = int(fin.readline().strip())
+
+# find maximum number of features shared by 2 animals
+animals = []
+
+for _ in range(N):
+    line = fin.readline().strip().split()
+    animal = line[0]
+    number_of_features = int(line[1])
+    feature_set = set()
+    for i in range(2, 2 + number_of_features):
+        feature_set.add(line[i])
+    animals.append(feature_set)
 
 count = 0
-for i in range(M):
-    for j in range(i + 1, M):
-        for k in range(j + 1, M):
-            spotted_set = set()
-            for r in range(N):
-                spotted_set.add(genes[r][i] + genes[r][j] + genes[r][k])
-            duplicated = False
-            for r in range(N, 2 * N):
-                if genes[r][i] + genes[r][j] + genes[r][k] in spotted_set:
-                    duplicated = True
-                    break
-            if duplicated is False:
-                count += 1
+# max means the maximum number of overlapping features between two animals
+for i in range(N):
+    for j in range(i + 1, N):
+        count = max(count, len(animals[i].intersection(animals[j])))
 
-fout.write(f"{count}\n")
+fout.write(f"{count + 1}\n")
 fout.close()
