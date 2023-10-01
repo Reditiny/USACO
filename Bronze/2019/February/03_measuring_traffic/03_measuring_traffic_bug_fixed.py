@@ -11,7 +11,7 @@ segments = []
 for i in range(N):
     segments.append(list(fin.readline().strip().split()))
 
-left, right = -float("inf"), float("inf")
+left, right = 0, 1000 * 100
 for k in range(N - 1, -1, -1):
     if segments[k][0] == "none":
         left = max(left, int(segments[k][1]))
@@ -26,7 +26,7 @@ for k in range(N - 1, -1, -1):
 fout.write(f"{left} {right}\n")
 
 
-left, right = -float("inf"), float("inf")
+left, right = 0, 1000 * 100
 for j in range(N):
     if segments[j][0] == "none":
         left = max(left, int(segments[j][1]))
@@ -37,11 +37,7 @@ for j in range(N):
     elif segments[j][0] == "off":
         left -= int(segments[j][2])
         right -= int(segments[j][1])
-        left = max(left, 0)
+        left = max(left, 0)  # bug fixed
+
 fout.write(f"{left} {right}\n")
-
-
-
-
-
 fout.close()

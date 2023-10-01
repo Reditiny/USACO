@@ -1,0 +1,1 @@
+print(ord("d") - ord("a"))

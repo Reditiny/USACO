@@ -13,26 +13,29 @@ for _ in range(N):
     cows.append(list(map(int, fin.readline().strip().split())))
 
 cows_sort_by_x = cows.sort()
+min_4_x = []
+max_4_x = []
+for i in range(4):
+    min_4_x.append(cows_sort_by_x[i])
+for i in range(N - 1, -1, -1):
+    max_4.append(cows_sort_by_x[i])
+
 cows_sort_by_y = cows.sort(lambda x: x[1])
+min_4_y = []
+max_4_y = []
+for i in range(4):
+    min_4_y.append(cows_sort_by_y[i])
+for i in range(N - 1, -1, -1):
+    max_4_y.append(cows_sort_by_y[i])
 
-# [head, head, head], [head, head, tail], [head, tail, tail], [tail, tail, tail]
-# [head, head], [head, tail], [tail, tail]
-# head, tail
-pick = {
-    0: [],
-    1: [[0], [-1]],
-    2: [[0,1], [0, -1], [-2, -1]],
-    3: [[0, 1, 2], [0, 1, -1], [0, -2, -1], [-3, -2, -1]]
-}
+result = 40000 * 40000
 
+for number_of_min_x_removed in range(4):
+    for number_of_max_x_removed in range(4):
 
-
-for n_in_x in range(1, 4):
-    n_in_y = 3 - n_in_x
-    temp_cows = cows.copy()
-    for combinations in pick[n_in_x]:
-        for index in combinations:
-            temp_cows.remove(cows_sort_by_x[index])
+        for number_of_min_y_removed in range(4):
+            for number_of_max_y_removed in range(4):
+                if number_of_min_x_removed + number_of_max_x_removed + number_of_min_y_removed + number_of_max_y_removed >= 4:
 
 
 
