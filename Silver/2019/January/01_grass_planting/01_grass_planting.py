@@ -8,17 +8,12 @@ fin = open('planting.in', 'r')
 fout = open("planting.out", "w")
 
 N = int(fin.readline().strip())
-graph = [[] for _ in range(N)]
+degree = [0 for _ in range(N)]
 
-for _ in range(N):
+for i in range(N - 1):
     a, b = map(int, fin.readline().strip().split())
-    graph[a - 1].append(b - 1)
-    graph[b - 1].append(a - 1)
+    degree[a - 1] += 1
+    degree[b - 1] += 1
 
-result = N
-
-
-def dfs()
-
-
+fout.write(f"{max(degree) + 1}")
 fout.close()

@@ -5,6 +5,7 @@ PROG: traffic
 """
 fin = open('traffic.in', 'r')
 fout = open("traffic.out", "w")
+# http://usaco.org/index.php?page=viewproblem2&cpid=917
 
 N = int(fin.readline().strip())
 segments = []

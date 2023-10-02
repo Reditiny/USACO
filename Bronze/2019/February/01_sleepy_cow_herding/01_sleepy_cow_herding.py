@@ -5,6 +5,7 @@ PROG: herding
 """
 fin = open('herding.in', 'r')
 fout = open("herding.out", "w")
+# http://usaco.org/index.php?page=viewproblem2&cpid=915
 
 line = list(map(int, fin.readline().strip().split()))
 line.sort()
