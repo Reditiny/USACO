@@ -17,18 +17,18 @@ print(shuffles)
 # [0, 2, 3, 4, 1] -> [0, 4, 1, 2, 3], meaning value on location i comes from location nums[i]
 reversed_shuffles = [0 for i in range(N)]
 for i in range(N):
-    reversed_shuffles[shuffles[i]] = i
+    reversed_shuffles[i] = shuffles.index(i)
 
 ids = fin.readline().strip().split()
-order = [i for i in range(N)]
 
 for _ in range(3):
-    new_order = [-1 for _ in range(N)]
-    for i in range(N):
-        new_order[reversed_shuffles[i]] = order[i]
-    order = new_order.copy()
+    new_ids = [-1 for _ in range(N)]
+    for origin in range(N):
+        # id of origin moving to reversed_shuffles[origin]
+        new_ids[reversed_shuffles[origin]] = ids[origin]
+    ids = new_ids.copy()
 
 for i in range(N):
-    fout.write(f"{ids[order[i]]}\n")
+    fout.write(f"{ids[i]}\n")
 
 fout.close()
