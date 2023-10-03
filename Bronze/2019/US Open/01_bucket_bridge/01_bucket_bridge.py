@@ -5,6 +5,7 @@ PROG: buckets
 """
 fin = open('buckets.in', 'r')
 fout = open("buckets.out", "w")
+# http://www.usaco.org/index.php?page=viewproblem2&cpid=939
 
 layout = []
 for _ in range(10):

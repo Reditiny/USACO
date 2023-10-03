@@ -5,11 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bronze/2017/December/02_the_bovine_shuffle/02_the_bovine_shuffle_forward_0_index.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2017/December/02_the_bovine_shuffle/02_the_bovine_shuffle_forward_1_index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2018/US Open/03_family_tree/03_family_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/03_cow_evolution_build_tree_approach.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/03_cow_evolution_cross_approach.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/1.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/1.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/10.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/10.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/11.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/11.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/12.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/12.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/13.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/13.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/14.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/14.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/15.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/15.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/16.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/16.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/17.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/17.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/2.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/2.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/3.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/3.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/4.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/4.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/5.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/5.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/6.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/6.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/7.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/7.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/8.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/8.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/9.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/9.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2017/December/02_the_bovine_shuffle/02_the_bovine_shuffle_backward.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2017/December/02_the_bovine_shuffle/02_the_bovine_shuffle_backward.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2017/December/02_the_bovine_shuffle/02_the_bovine_shuffle_forward.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2017/December/02_the_bovine_shuffle/02_the_bovine_shuffle_forward_using_string_index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/01_bucket_bridge/01_bucket_bridge.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2019/US Open/01_bucket_bridge/01_bucket_bridge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/01_bucket_bridge/01_bucket_bridge_flood_precompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2019/US Open/01_bucket_bridge/01_bucket_bridge_flood_precompute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/01_bucket_bridge/01_bucket_bridge_flood_timeout_second_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2019/US Open/01_bucket_bridge/01_bucket_bridge_flood_timeout_second_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/02_milk_factory/02_milk_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2019/US Open/02_milk_factory/02_milk_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/02_milk_factory/02_milk_factory_neighbor_matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2019/US Open/02_milk_factory/02_milk_factory_neighbor_matrix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/02_milk_factory/factory.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/02_milk_factory/factory.out" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +88,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/shiyuan/Desktop/科技教育/计算机教育/USACO/USACO/Bronze/2017/December/02_the_bovine_shuffle",
+    "last_opened_file_path": "/Users/shiyuan/Desktop/科技教育/计算机教育/USACO/USACO/Bronze/2019/US Open/03_cow_evolution",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -58,11 +98,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution" />
       <recent name="$PROJECT_DIR$/Bronze/2017/December/02_the_bovine_shuffle" />
       <recent name="$PROJECT_DIR$/Bronze/2020/February/03_swapity_swap" />
       <recent name="$PROJECT_DIR$/Bronze/2020/February" />
       <recent name="$PROJECT_DIR$/Bronze/2019/US Open/02_milk_factory" />
-      <recent name="$PROJECT_DIR$/Silver/2021/January/03_spaced_out" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Bronze/2020/February/02_mad_scientist" />
@@ -72,7 +112,7 @@
       <recent name="$PROJECT_DIR$/Bronze/2019/January/01_shell_game/livecode" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.02_the_bovine_shuffle_forward_0_index">
+  <component name="RunManager" selected="Python.03_cow_evolution_build_tree_approach">
     <configuration name="02_the_bovine_shuffle_backward" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="USACO" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,7 +179,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="03_swapity_swap_find_pattern_timeout" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="03_cow_evolution_build_tree_approach" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="USACO" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,12 +187,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bronze/2020/February/03_swapity_swap" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bronze/2020/February/03_swapity_swap/03_swapity_swap_find_pattern_timeout.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/03_cow_evolution_build_tree_approach.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -207,11 +247,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.03_cow_evolution_build_tree_approach" />
         <item itemvalue="Python.02_the_bovine_shuffle_forward_0_index" />
         <item itemvalue="Python.02_the_bovine_shuffle_backward" />
         <item itemvalue="Python.02_the_bovine_shuffle_forward_1_index" />
         <item itemvalue="Python.03_swapity_swap_find_pattern_timeout_fixed" />
-        <item itemvalue="Python.03_swapity_swap_find_pattern_timeout" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +274,7 @@
       <workItem from="1693755129387" duration="7450000" />
       <workItem from="1694016128987" duration="167301000" />
       <workItem from="1695953496846" duration="17248000" />
-      <workItem from="1696005520197" duration="52960000" />
+      <workItem from="1696005520197" duration="62612000" />
     </task>
     <servers />
   </component>
@@ -269,6 +309,7 @@
     <SUITE FILE_PATH="coverage/USACO$02_air_conditioning.coverage" NAME="02_air_conditioning Coverage Results" MODIFIED="1694502790197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning" />
     <SUITE FILE_PATH="coverage/USACO$02_cities_and_states.coverage" NAME="02_cities_and_states Coverage Results" MODIFIED="1694338883524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Silver/2016/December/02_cities_and_states" />
     <SUITE FILE_PATH="coverage/USACO$mothers_milk_3darray_dp.coverage" NAME="mothers_milk_3darray_dp Coverage Results" MODIFIED="1690729263750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 5/mothers milk" />
+    <SUITE FILE_PATH="coverage/USACO$03_cow_evolution_build_tree_approach.coverage" NAME="03_cow_evolution_build_tree_approach Coverage Results" MODIFIED="1696327092980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution" />
     <SUITE FILE_PATH="coverage/USACO$01_the_lost_cow_math.coverage" NAME="01_the_lost_cow_math Coverage Results" MODIFIED="1695394355195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2017/US Open/01_the_lost_cow" />
     <SUITE FILE_PATH="coverage/USACO$03_measuring_traffic.coverage" NAME="03_measuring_traffic Coverage Results" MODIFIED="1692536798576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2019/February" />
     <SUITE FILE_PATH="coverage/USACO$01_the_lost_cow_simulation.coverage" NAME="01_the_lost_cow_simulation Coverage Results" MODIFIED="1695379574314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2017/US Open/01_the_lost_cow" />

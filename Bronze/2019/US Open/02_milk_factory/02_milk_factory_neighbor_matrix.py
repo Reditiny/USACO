@@ -5,6 +5,7 @@ PROG: buckets
 """
 fin = open('factory.in', 'r')
 fout = open("factory.out", "w")
+# http://www.usaco.org/index.php?page=viewproblem2&cpid=940
 
 N = int(fin.readline().strip())
 
