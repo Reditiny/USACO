@@ -9,37 +9,34 @@ fout = open("bcs.out", "w")
 
 N, K = map(int, fin.readline().strip().split())
 
-original = []
-original_count_of_hash_by_line = []
-for _ in range(N):
-    original.append(fin.readline().strip())
-    original_count_of_hash_by_line.append(original[-1].count("#"))
-
 pieces = []
-pieces_count_of_hash_by_line = []
-for i in range(K):
-    piece = []
-    hash_count_by_line = []
-    for _ in range(N):
-        piece.append(fin.readline().strip())
-        hash_count_by_line.append(piece[-1].count("#"))
-    pieces_count_of_hash_by_line.append(hash_count_by_line)
+sides = []
+for i in range(K + 1):
+    top = N - 1
+    bottom = 0
+    left = N - 1
+    right = 0
+    piece = [[False for _ in range(N)] for _ in range(N)]
 
+    for r in range(N):
+        row = fin.readline().strip()
+        for c in range(N):
+            piece[r][c] = row[c] == "#"
+            if piece[r][c] is True:
+                top = min(top, r)
+                bottom = max(bottom, r)
+                left = min(left, c)
+                right = max(right, c)
+    pieces.append(piece)
+    sides.append((top, bottom, left, right))
 
-def match(pieces, index_1, index_2, original):
+target = pieces[0]
 
-
-def fit(piece, target):
-
-
-
-
-for i in range(K - 1):
-    for j in range(i + 1, K):
-        if pieces_count_of_hash[i] + pieces_count_of_hash[j] != sum(original_count_of_hash):
+for i in range(1, K + 1):
+    for j in range(1, K + 1):
+        if i == j:
             continue
-        match(pieces, i, j, original)
-
+        for x_shift in range()
 
 
 

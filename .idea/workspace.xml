@@ -5,51 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bronze/2018/US Open/03_family_tree/03_family_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/03_cow_evolution_build_tree_approach.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/03_cow_evolution_cross_approach.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/1.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/1.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/10.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/10.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/11.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/11.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/12.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/12.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/13.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/13.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/14.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/14.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/15.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/15.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/16.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/16.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/17.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/17.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/2.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/2.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/3.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/3.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/4.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/4.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/5.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/5.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/6.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/6.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/7.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/7.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/8.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/8.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/9.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution/evolution_bronze_open19/9.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/01_bucket_bridge/01_bucket_bridge.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2019/US Open/01_bucket_bridge/01_bucket_bridge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/01_bucket_bridge/01_bucket_bridge_flood_precompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2019/US Open/01_bucket_bridge/01_bucket_bridge_flood_precompute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/01_bucket_bridge/01_bucket_bridge_flood_timeout_second_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2019/US Open/01_bucket_bridge/01_bucket_bridge_flood_timeout_second_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/02_milk_factory/02_milk_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2019/US Open/02_milk_factory/02_milk_factory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/02_milk_factory/02_milk_factory_neighbor_matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2019/US Open/02_milk_factory/02_milk_factory_neighbor_matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/02_milk_factory/factory.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2019/US Open/02_milk_factory/factory.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2018/US Open/03_family_tree/03_family_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2018/US Open/03_family_tree/03_family_tree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,19 +40,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/shiyuan/Desktop/科技教育/计算机教育/USACO/USACO/Bronze/2019/US Open/03_cow_evolution",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/shiyuan/Desktop/科技教育/计算机教育/USACO/USACO/Bronze/2019/US Open/03_cow_evolution&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution" />
@@ -275,6 +232,7 @@
       <workItem from="1694016128987" duration="167301000" />
       <workItem from="1695953496846" duration="17248000" />
       <workItem from="1696005520197" duration="62612000" />
+      <workItem from="1696328540813" duration="1763000" />
     </task>
     <servers />
   </component>
