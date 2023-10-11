@@ -8,32 +8,53 @@ fin = open('tracing.in', 'r')
 fout = open("tracing.out", "w")
 N, T = map(int, fin.readline().strip().split())
 
-health_state = fin.readline().strip()
-sick_indexes = []
-healthy_indexes = []
-
-for i in range(len(health_state)):
-    if health_state[i] == "1":
-        sick_indexes.append(i)
-    else:
-        healthy_indexes.append(i)
+health_state = [int(c) for c in fin.readline().strip()]  # to compare with the final cow health state
 
 records = []
-shake_hand_history_per_cow = [[] for _ in range(N)]
 for _ in range(T):
     t, x, y = map(int, fin.readline().strip().split())
     records.append([t, x - 1, y - 1])  # 0-index
-    shake_hand_history_per_cow[x - 1].append([y - 1, t])
-    shake_hand_history_per_cow[y - 1].append([x - 1, t])
 
 records.sort()
-for record in records:
-    t, x, y = record
-    # possible to have 2 cows as patient 0
-    if x in sick_indexes and y in sick_indexes:
-        shake_hand_history_per_cow[x]
+min_k = float("inf")
+max_k = -float("inf")
+possible_patient_0 = 0
 
 
+def simulate(patient_zero):
+    min_k = float("inf")
+    max_k = -float("inf")
+    # try every possible k, [0, 250]
+    for k in range(251):
+        cur_infected = [False] * N
+        cur_infected[patient_zero] = True
+        time = [0] * N
+        for r in records:
+            cow1, cow2 = r[1], r[2]
+            if cur_infected[cow1]:
+                time[cow1] += 1
+            if cur_infected[cow2]:
+                time[cow2] += 1
+            if cur_infected[cow1] and not cur_infected[cow2] and time[cow1] <= k:
+                cur_infected[cow2] = True
+            if cur_infected[cow2] and not cur_infected[cow1] and time[cow2] <= k:
+                cur_infected[cow1] = True
+        if cur_infected == health_state:
+            min_k = min(min_k, k)
+            max_k = max(max_k, k)
+    return min_k, max_k
 
 
+for i in range(len(health_state)):
+    if health_state[i] == 1:
+        min_k_result, max_k_result = simulate(i)
+        # at least 1 k works
+        if max_k_result != -float("inf"):
+            min_k = min(min_k, min_k_result)
+            max_k = max(max_k, max_k_result)
+            possible_patient_0 += 1
+
+if max_k == 250:
+    max_k = "Infinity"
+fout.write(f"{possible_patient_0} {min_k} {max_k}")
 fout.close()
