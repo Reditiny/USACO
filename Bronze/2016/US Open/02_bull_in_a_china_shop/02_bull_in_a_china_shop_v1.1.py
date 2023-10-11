@@ -44,21 +44,19 @@ def get_gaps(piece):
 for i in range(1, K + 1):
     i_gap_of_left, i_gap_of_right, i_gap_of_top, i_gap_of_bottom = get_gaps(i)
     for j in range(i + 1, K + 1):
-        # vertically the piece can move
         j_gap_of_left, j_gap_of_right, j_gap_of_top, j_gap_of_bottom = get_gaps(j)
         for i_row_shift in range(-i_gap_of_top, i_gap_of_bottom + 1):
             for i_col_shift in range(-i_gap_of_left, i_gap_of_right + 1):
                 for j_row_shift in range(-j_gap_of_top, j_gap_of_bottom + 1):
                     for j_col_shift in range(-j_gap_of_left, j_gap_of_right + 1):
-                        good = True
-                        # Build a moved piece and compare with target
-                        new_piece = [[False for _ in range(N)] for _ in range(N)]
 
                         # Move i piece
                         for r in range(N):
                             for c in range(N):
                                 if pieces[i][r][c]:
-                                    new_piece[r + i_row_shift][c + i_col_shift] = True
+                                    if not target[r + i_row_shift][c + i_col_shift]:
+                                        good = False
+                                        break
 
                         # Move j piece
                         for r in range(N):
