@@ -33,6 +33,10 @@ for i in range(K + 1):
 target = pieces[0]
 
 
+def check(piece, x, y):
+    return 0 <= x < N and 0 <= y < N and piece[x][y]
+
+
 def get_gaps(piece):
     gap_of_bottom = N - 1 - sides[piece][3]
     gap_of_top = sides[piece][2]
@@ -49,29 +53,30 @@ for i in range(1, K + 1):
             for i_col_shift in range(-i_gap_of_left, i_gap_of_right + 1):
                 for j_row_shift in range(-j_gap_of_top, j_gap_of_bottom + 1):
                     for j_col_shift in range(-j_gap_of_left, j_gap_of_right + 1):
-
-                        # Move i piece
+                        good = True
                         for r in range(N):
                             for c in range(N):
-                                if pieces[i][r][c]:
-                                    if not target[r + i_row_shift][c + i_col_shift]:
-                                        good = False
-                                        break
+                                # The current pixel [r, c] can come from [r - i_row_shift, c - i_col_shift]
+                                # and [r - j_row_shift, c - j_col_shift]
+                                # For pieces[i] the pixel moves i_row_shift to r, as r = r_pieces[i] + i_row_shift
+                                # So reversely, the r_pieces[i] = r - i_row_shift
+                                pieces_i_original_r, pieces_i_original_c = r - i_row_shift, c - i_col_shift
+                                pieces_j_original_r, pieces_j_original_c = r - j_row_shift, c - j_col_shift
 
-                        # Move j piece
-                        for r in range(N):
-                            for c in range(N):
-                                if pieces[j][r][c]:
-                                    # i already has a "#" in there
-                                    if new_piece[r + j_row_shift][c + j_col_shift]:
-                                        good = False
-                                        break
-                                    else:
-                                        new_piece[r + j_row_shift][c + j_col_shift] = True
+                                pieces_i_value = check(pieces[i], pieces_i_original_r, pieces_i_original_c)
+                                pieces_j_value = check(pieces[j], pieces_j_original_r, pieces_j_original_c)
 
-                        if not good:
-                            continue
-                        if new_piece == target:
+                                if pieces_i_value and pieces_j_value:
+                                    good = False
+                                    break
+
+                                if target[r][c] != (pieces_i_value or pieces_j_value):
+                                    good = False
+                                    break
+
+                            if not good:
+                                break
+                        if good:
                             fout.write(f"{i} {j}")
                             fout.close()
                             exit(0)
