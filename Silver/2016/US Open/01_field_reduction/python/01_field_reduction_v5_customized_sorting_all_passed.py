@@ -11,11 +11,6 @@ PROG: reduce
 # of y we still need to try both of the points and cannot guarantee which one to remove.
 # For example, choose 3 points from x, at the last point we can choose between (0, 6) and (0, -6), could lead
 # to different result (it could happen if removing (0, -6) can save more areas)
-
-# Answer: The solution still work. 
-# Start from choosing 1 point, say we randomly choose from (0, 6) and (0, -6) and we didn't pick (0, -6) as the
-# furthest point that will give us the smallest area, it's fine because we will consider from y's perspective;
-# if (0, -6) is truly an edge point, then we covered the case when removing one point from y
 from functools import cmp_to_key
 
 
