@@ -3,6 +3,7 @@ ID: mck15821
 LANG: PYTHON3
 PROG: family
 """
+# Time complexity: best case O(log(N) * 2), worst case O(n * 2)
 # http://www.usaco.org/index.php?page=viewproblem2&cpid=833
 fin = open('family.in', 'r')
 fout = open("family.out", "w")
