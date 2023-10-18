@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Bronze/2016/December/03_the_cow_signal/TheCowSignal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2018/US Open/03_family_tree/03_family_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2018/US Open/03_family_tree/03_family_tree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,19 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/shiyuan/Desktop/科技教育/计算机教育/USACO/USACO/Bronze/2019/US Open/03_cow_evolution&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/red/Desktop/work/USACO/Bronze/2016/December/03_the_cow_signal",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution" />
@@ -69,7 +70,7 @@
       <recent name="$PROJECT_DIR$/Bronze/2019/January/01_shell_game/livecode" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.03_cow_evolution_build_tree_approach">
+  <component name="RunManager">
     <configuration name="02_the_bovine_shuffle_backward" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="USACO" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -202,15 +203,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.03_cow_evolution_build_tree_approach" />
-        <item itemvalue="Python.02_the_bovine_shuffle_forward_0_index" />
-        <item itemvalue="Python.02_the_bovine_shuffle_backward" />
-        <item itemvalue="Python.02_the_bovine_shuffle_forward_1_index" />
-        <item itemvalue="Python.03_swapity_swap_find_pattern_timeout_fixed" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -233,6 +225,7 @@
       <workItem from="1695953496846" duration="17248000" />
       <workItem from="1696005520197" duration="62612000" />
       <workItem from="1696328540813" duration="1763000" />
+      <workItem from="1697642143696" duration="303000" />
     </task>
     <servers />
   </component>
@@ -252,69 +245,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/USACO$livecode.coverage" NAME="livecode Coverage Results" MODIFIED="1696265404418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2017/December/02_the_bovine_shuffle" />
-    <SUITE FILE_PATH="coverage/USACO$03_its_all_about_the_base_binary_search.coverage" NAME="03_its_all_about_the_base_binary_search Coverage Results" MODIFIED="1694831969476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2015/January/03_its_all_about_the_base" />
-    <SUITE FILE_PATH="coverage/USACO$02_bovine_genomics_pre_compute.coverage" NAME="02_bovine_genomics_pre_compute Coverage Results" MODIFIED="1695576262161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Silver/2017/US Open/02_bovine_genomics" />
-    <SUITE FILE_PATH="coverage/USACO$03_back_and_forth_recursion.coverage" NAME="03_back_and_forth_recursion Coverage Results" MODIFIED="1694845050957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2018/December/03_back_and_forth" />
-    <SUITE FILE_PATH="coverage/USACO$runaround_number.coverage" NAME="runaround_number Coverage Results" MODIFIED="1692289442288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 2/runaround_number" />
-    <SUITE FILE_PATH="coverage/USACO$02_hoofball.coverage" NAME="02_hoofball Coverage Results" MODIFIED="1695573686559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2018/February/02_hoofball" />
-    <SUITE FILE_PATH="coverage/USACO$02_the_bovine_shuffle_forward.coverage" NAME="02_the_bovine_shuffle_forward Coverage Results" MODIFIED="1696265796278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2017/December/02_the_bovine_shuffle" />
-    <SUITE FILE_PATH="coverage/USACO$controlling_companies.coverage" NAME="controlling_companies_max_recursion_ bug Coverage Results" MODIFIED="1692415872795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies" />
-    <SUITE FILE_PATH="coverage/USACO$money_systems_recursion.coverage" NAME="money_systems_recursion Coverage Results" MODIFIED="1692499473016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems" />
-    <SUITE FILE_PATH="coverage/USACO$01_feb_with_bug_experiment2.coverage" NAME="01_feb_with_bug_experiment2 Coverage Results" MODIFIED="1696135029803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2023/US Open/01_feb" />
-    <SUITE FILE_PATH="coverage/USACO$02_air_conditioning.coverage" NAME="02_air_conditioning Coverage Results" MODIFIED="1694502790197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2023/January/02_air_conditioning" />
-    <SUITE FILE_PATH="coverage/USACO$02_cities_and_states.coverage" NAME="02_cities_and_states Coverage Results" MODIFIED="1694338883524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Silver/2016/December/02_cities_and_states" />
-    <SUITE FILE_PATH="coverage/USACO$mothers_milk_3darray_dp.coverage" NAME="mothers_milk_3darray_dp Coverage Results" MODIFIED="1690729263750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 1/Section 5/mothers milk" />
-    <SUITE FILE_PATH="coverage/USACO$03_cow_evolution_build_tree_approach.coverage" NAME="03_cow_evolution_build_tree_approach Coverage Results" MODIFIED="1696327092980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2019/US Open/03_cow_evolution" />
-    <SUITE FILE_PATH="coverage/USACO$01_the_lost_cow_math.coverage" NAME="01_the_lost_cow_math Coverage Results" MODIFIED="1695394355195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2017/US Open/01_the_lost_cow" />
-    <SUITE FILE_PATH="coverage/USACO$03_measuring_traffic.coverage" NAME="03_measuring_traffic Coverage Results" MODIFIED="1692536798576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2019/February" />
-    <SUITE FILE_PATH="coverage/USACO$01_the_lost_cow_simulation.coverage" NAME="01_the_lost_cow_simulation Coverage Results" MODIFIED="1695379574314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2017/US Open/01_the_lost_cow" />
-    <SUITE FILE_PATH="coverage/USACO$03_drought.coverage" NAME="03_drought Coverage Results" MODIFIED="1695052478063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2022/January/03_drought" />
-    <SUITE FILE_PATH="coverage/USACO$03_modern_art.coverage" NAME="03_modern_art Coverage Results" MODIFIED="1695991011171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2017/US Open/03_modern_art" />
-    <SUITE FILE_PATH="coverage/USACO$02_angry_cows.coverage" NAME="02_angry_cows Coverage Results" MODIFIED="1694364154184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2016/January/02_angry_cows" />
-    <SUITE FILE_PATH="coverage/USACO$02_milking_order.coverage" NAME="02_milking_order Coverage Results" MODIFIED="1695457174406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2018/US Open/02_milking_order" />
-    <SUITE FILE_PATH="coverage/USACO$03_swapity_swap_simulation_optimized_timeout.coverage" NAME="03_swapity_swap_simulation_optimized_timeout Coverage Results" MODIFIED="1696238559755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2020/February/03_swapity_swap" />
-    <SUITE FILE_PATH="coverage/USACO$03_back_and_forth.coverage" NAME="03_back_and_forth Coverage Results" MODIFIED="1694511060649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2018/December/03_back_and_forth" />
-    <SUITE FILE_PATH="coverage/USACO$03_swapity_swap_find_pattern_timeout_fixed.coverage" NAME="03_swapity_swap_find_pattern_timeout_fixed Coverage Results" MODIFIED="1696240160252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2020/February/03_swapity_swap" />
-    <SUITE FILE_PATH="coverage/USACO$03_back_and_forth_with_bug.coverage" NAME="03_back_and_forth_dfs_with_bug Coverage Results" MODIFIED="1694844523968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2018/December/03_back_and_forth" />
-    <SUITE FILE_PATH="coverage/USACO$02_the_bovine_shuffle_backward.coverage" NAME="02_the_bovine_shuffle_backward Coverage Results" MODIFIED="1696265501515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2017/December/02_the_bovine_shuffle" />
-    <SUITE FILE_PATH="coverage/USACO$fence_painting_demo_1.coverage" NAME="fence_painting_demo_1 Coverage Results" MODIFIED="1693933508603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2015/December/01_fence_painting/livecoding" />
-    <SUITE FILE_PATH="coverage/USACO$03_watching_mooloo_debug.coverage" NAME="03_watching_mooloo_debug Coverage Results" MODIFIED="1694569008641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2023/February/03_watching_mooloo" />
-    <SUITE FILE_PATH="coverage/USACO$01_team_tic_tac_toe.coverage" NAME="01_team_tic_tac_toe Coverage Results" MODIFIED="1693152280228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe" />
-    <SUITE FILE_PATH="coverage/USACO$03_cow_tipping_optimized_with_bug.coverage" NAME="03_cow_tipping_optimized_with_bug Coverage Results" MODIFIED="1694612884087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2017/January/03_cow_tipping" />
-    <SUITE FILE_PATH="coverage/USACO$controlling_companies_max_recursion__bug2.coverage" NAME="controlling_companies_max_recursion_ concised Coverage Results" MODIFIED="1692415183056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies" />
-    <SUITE FILE_PATH="coverage/USACO$02_cities_and_states_solution.coverage" NAME="02_cities_and_states_solution Coverage Results" MODIFIED="1694338581973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Silver/2016/December/02_cities_and_states" />
-    <SUITE FILE_PATH="coverage/USACO$02_even_more_odd_photos.coverage" NAME="02_even_more_odd_photos Coverage Results" MODIFIED="1694791734851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2021/January/02_even_more_odd_photos" />
-    <SUITE FILE_PATH="coverage/USACO$02_bovine_genomics_timeout.coverage" NAME="02_bovine_genomics_timeout Coverage Results" MODIFIED="1694222516312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Silver/2017/US Open/02_bovine_genomics" />
-    <SUITE FILE_PATH="coverage/USACO$03_livestock_lineup.coverage" NAME="03_livestock_lineup Coverage Results" MODIFIED="1694507087889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2019/December/03_livestock_lineup" />
-    <SUITE FILE_PATH="coverage/USACO$01_feb_enumerate_timeout.coverage" NAME="01_feb_enumerate_timeout Coverage Results" MODIFIED="1696124792009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2023/US Open/01_feb" />
-    <SUITE FILE_PATH="coverage/USACO$03_swapity_swap.coverage" NAME="03_swapity_swap_find_pattern_timeout Coverage Results" MODIFIED="1696240075162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2020/February/03_swapity_swap" />
-    <SUITE FILE_PATH="coverage/USACO$controlling_companies_max_recursion__bug_fix.coverage" NAME="controlling_companies_max_recursion_ bug_fix Coverage Results" MODIFIED="1692415953258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies" />
-    <SUITE FILE_PATH="coverage/USACO$03_its_all_about_the_base_last_case_timeout.coverage" NAME="03_its_all_about_the_base_last_case_timeout Coverage Results" MODIFIED="1694831881076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2015/January/03_its_all_about_the_base" />
-    <SUITE FILE_PATH="coverage/USACO$03_taming_the_herd.coverage" NAME="03_taming_the_herd Coverage Results" MODIFIED="1695472725015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2018/February/03_taming_the_herd" />
-    <SUITE FILE_PATH="coverage/USACO$03_swapity_swap_simulation_timeout.coverage" NAME="03_swapity_swap_simulation_timeout Coverage Results" MODIFIED="1696236756543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2020/February/03_swapity_swap" />
-    <SUITE FILE_PATH="coverage/USACO$03_modern_art_concise.coverage" NAME="03_modern_art_concise Coverage Results" MODIFIED="1695991335585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2017/US Open/03_modern_art" />
-    <SUITE FILE_PATH="coverage/USACO$longest_prefix_timeout.coverage" NAME="longest_prefix_timeout Coverage Results" MODIFIED="1692436904412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/longest_prefix" />
-    <SUITE FILE_PATH="coverage/USACO$longest_prefix_trie.coverage" NAME="longest_prefix_trie Coverage Results" MODIFIED="1692437268346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/longest_prefix" />
-    <SUITE FILE_PATH="coverage/USACO$money_systems_dp.coverage" NAME="money_systems_dp Coverage Results" MODIFIED="1692418413216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems" />
-    <SUITE FILE_PATH="coverage/USACO$01_feb_with_bug.coverage" NAME="01_feb_with_bug Coverage Results" MODIFIED="1696006085343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2023/US Open/01_feb" />
-    <SUITE FILE_PATH="coverage/USACO$overfencing.coverage" NAME="overfencing Coverage Results" MODIFIED="1692504321466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 4/overfencing" />
-    <SUITE FILE_PATH="coverage/USACO$03_back_and_forth_v2.coverage" NAME="03_back_and_forth_set Coverage Results" MODIFIED="1694844774314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2018/December/03_back_and_forth" />
-    <SUITE FILE_PATH="coverage/USACO$controlling_companies_debugging.coverage" NAME="controlling_companies_debugging Coverage Results" MODIFIED="1692411683484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/controlling_companies" />
-    <SUITE FILE_PATH="coverage/USACO$03_its_all_about_the_base.coverage" NAME="03_its_all_about_the_base Coverage Results" MODIFIED="1694830900007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2015/January/03_its_all_about_the_base" />
-    <SUITE FILE_PATH="coverage/USACO$03_drought_dual.coverage" NAME="03_drought_dual Coverage Results" MODIFIED="1695054292177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2022/January/03_drought" />
-    <SUITE FILE_PATH="coverage/USACO$01_sleeping_in_the_class.coverage" NAME="01_sleeping_in_the_class Coverage Results" MODIFIED="1694863805712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2022/February/01_sleeping_in_the_class" />
-    <SUITE FILE_PATH="coverage/USACO$02_sleepy_cow_sorting.coverage" NAME="02_sleepy_cow_sorting Coverage Results" MODIFIED="1695466052330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2019/January/02_sleepy_cow_sorting" />
-    <SUITE FILE_PATH="coverage/USACO$hamming_codes.coverage" NAME="hamming_codes Coverage Results" MODIFIED="1691854799318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 1/hamming_codes" />
-    <SUITE FILE_PATH="coverage/USACO$money_systems.coverage" NAME="money_systems_recursion Coverage Results" MODIFIED="1692426323544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/USACO Trianing Learning Path/Chapter 2/Section 3/money_systems" />
-    <SUITE FILE_PATH="coverage/USACO$01_the_lost_cow.coverage" NAME="01_the_lost_cow Coverage Results" MODIFIED="1692637806435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2017/US Open/01_the_lost_cow" />
-    <SUITE FILE_PATH="coverage/USACO$test.coverage" NAME="test Coverage Results" MODIFIED="1696124458977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2016/December/02_block_game" />
-    <SUITE FILE_PATH="coverage/USACO$01_cow_college.coverage" NAME="01_cow_college Coverage Results" MODIFIED="1694847215107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2022/December/01_cow_college" />
-    <SUITE FILE_PATH="coverage/USACO$03_spaced_out.coverage" NAME="03_spaced_out Coverage Results" MODIFIED="1696175973394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Silver/2021/January/03_spaced_out" />
-    <SUITE FILE_PATH="coverage/USACO$02_cities_and_states_trie.coverage" NAME="02_cities_and_states_trie Coverage Results" MODIFIED="1694343154305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Silver/2016/December/02_cities_and_states" />
-    <SUITE FILE_PATH="coverage/USACO$01_feb.coverage" NAME="01_feb Coverage Results" MODIFIED="1695997374478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2023/US Open/01_feb" />
-    <SUITE FILE_PATH="coverage/USACO$02_milk_factory_neighbor_matrix.coverage" NAME="02_milk_factory_neighbor_matrix Coverage Results" MODIFIED="1696235276631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bronze/2019/US Open/02_milk_factory" />
   </component>
 </project>
