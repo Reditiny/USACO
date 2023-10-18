@@ -32,7 +32,7 @@ public class TheLostCow {
             step -= (currentPosition - cowPosition);
             pw.println(step);
         } else {
-            int step = 4;
+            int step = 4; // 从原点先向右1步，回到原点1步，再向左2步
             int power = 1;
             int currentPosition = farmerPosition - 2;
             while ( cowPosition < currentPosition ) {
