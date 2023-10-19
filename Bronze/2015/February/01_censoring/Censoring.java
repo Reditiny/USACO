@@ -16,31 +16,14 @@ public class Censoring {
         char[] text = r.readLine().toCharArray();
         String target = r.readLine();
         // 将文本中字符依次放入ans中，每次都判断ans是否以target结尾
-        List<Character> ans = new ArrayList<Character>();
+        StringBuilder ans = new StringBuilder();
         for (int i = 0; i < text.length; i++) {
-            ans.add(text[i]);
-            if (endWith(ans, target)) {
-                for (int j = 0; j < target.length(); j++) {
-                    ans.remove(ans.size() - 1);
-                }
+            ans.append(text[i]);
+            if (ans.length() > target.length() && ans.substring(ans.length() - target.length(), ans.length()).equals(target)) {
+                ans.delete(ans.length() - target.length(), ans.length());
             }
         }
-        pw.println(ans.toString().replaceAll("[\\[\\]\\,\\s]", ""));
+        pw.println(ans);
         pw.close();
-    }
-
-    /**
-     * 判断ans中是否以target结尾
-     */
-    public static boolean endWith(List<Character> ans, String target) {
-        if (ans.size() < target.length()) {
-            return false;
-        }
-        for (int i = 0; i < target.length(); i++) {
-            if (ans.get(ans.size() - target.length() + i) != target.charAt(i)) {
-                return false;
-            }
-        }
-        return true;
     }
 }

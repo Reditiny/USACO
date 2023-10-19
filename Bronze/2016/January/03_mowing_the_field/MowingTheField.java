@@ -18,57 +18,21 @@ public class MowingTheField {
         int mark = 1;    // 自增地标记每次走过的格子
         int ans = 10000;
         boolean cellMoreThanOnce = false;
+        Map<String,int[]> moveMap = Map.of("N",new int[]{0,1},"S",new int[]{0,-1},"W",new int[]{-1,0},"E",new int[]{1,0});
         grass[x][y] = 1;
         for (int i = 0; i < n; i++) {
             String[] s = r.readLine().split(" ");
             int step = Integer.parseInt(s[1]);
-            switch (s[0]) {
-                case "N":
-                    for (int j = 0; j < step; j++) {
-                        y++;
-                        mark++;
-                        if (grass[x][y] != 0) {   // 值不为零说明这个格子被走过了 两次标记的差即为间隔 x
-                            cellMoreThanOnce = true;
-                            ans = Math.min(ans, mark - grass[x][y]);
-                        }
-                        grass[x][y] = mark;
-                    }
-                    break;
-                case "S":
-                    for (int j = 0; j < step; j++) {
-                        y--;
-                        mark++;
-                        if (grass[x][y] != 0) {
-                            cellMoreThanOnce = true;
-                            ans = Math.min(ans, mark - grass[x][y]);
-                        }
-                        grass[x][y] = mark;
-                    }
-                    break;
-                case "W":
-                    for (int j = 0; j < step; j++) {
-                        x--;
-                        mark++;
-                        if (grass[x][y] != 0) {
-                            cellMoreThanOnce = true;
-                            ans = Math.min(ans, mark - grass[x][y]);
-                        }
-                        grass[x][y] = mark;
-                    }
-                    break;
-                case "E":
-                    for (int j = 0; j < step; j++) {
-                        x++;
-                        mark++;
-                        if (grass[x][y] != 0) {
-                            cellMoreThanOnce = true;
-                            ans = Math.min(ans, mark - grass[x][y]);
-                        }
-                        grass[x][y] = mark;
-                    }
-                    break;
-                default:
-                    break;
+            int[] move = moveMap.get(s[0]);
+            for (int j = 0; j < step; j++) {
+                y += move[1];
+                x += move[0];
+                mark++;
+                if (grass[x][y] != 0) {   // 值不为零说明这个格子被走过了 两次标记的差即为间隔 x
+                    cellMoreThanOnce = true;
+                    ans = Math.min(ans, mark - grass[x][y]);
+                }
+                grass[x][y] = mark;
             }
         }
         if (cellMoreThanOnce) {
