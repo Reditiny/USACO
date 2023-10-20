@@ -50,56 +50,17 @@ public class MilkMeasurement {
     }
 
     /**
-     * 判断两个数组中最大值的位置是否相同
-     * 即是否修改display的逻辑
-     */
-    public static boolean sameMax(int[] lastMilk, int[] curMilk) {
-        return (lastMilk[0] == lastMilk[1] && lastMilk[2] == lastMilk[0]) && (curMilk[0] == curMilk[1] && curMilk[2] == curMilk[0]) ||
-
-                (lastMilk[0] > lastMilk[1] && lastMilk[0] > lastMilk[2]) && (curMilk[0] > curMilk[1] && curMilk[0] > curMilk[2]) ||
-                (lastMilk[1] > lastMilk[0] && lastMilk[1] > lastMilk[2]) && (curMilk[1] > curMilk[0] && curMilk[1] > curMilk[2]) ||
-                (lastMilk[2] > lastMilk[0] && lastMilk[2] > lastMilk[1]) && (curMilk[2] > curMilk[0] && curMilk[2] > curMilk[1]) ||
-
-                (lastMilk[0] == lastMilk[1] && lastMilk[1] > lastMilk[2]) && (curMilk[0] == curMilk[1] && curMilk[1] > curMilk[2]) ||
-                (lastMilk[0] == lastMilk[2] && lastMilk[2] > lastMilk[1]) && (curMilk[0] == curMilk[2] && curMilk[2] > curMilk[1]) ||
-                (lastMilk[1] == lastMilk[2] && lastMilk[2] > lastMilk[0]) && (curMilk[1] == curMilk[2] && curMilk[2] > curMilk[0]);
-    }
-
-    /**
-     * 根据当前产量决定展示哪些牛 展示的组合共10种
+     * 根据奶量得到当前的display
      */
     public static boolean[] makeDisplay(int[] curMilk) {
-        boolean[] curDisplay = new boolean[3];
-        if (curMilk[0] == curMilk[1] && curMilk[1] == curMilk[2]) {
-            curDisplay = new boolean[]{true, true, true};
-        } else if (curMilk[0] == curMilk[1]) {
-            if (curMilk[0] > curMilk[2]) {
-                curDisplay = new boolean[]{true, true, false};
-            } else {
-                curDisplay = new boolean[]{false, false, true};
-            }
-        } else if (curMilk[0] == curMilk[2]) {
-            if (curMilk[0] > curMilk[1]) {
-                curDisplay = new boolean[]{true, false, true};
-            } else {
-                curDisplay = new boolean[]{false, true, false};
-            }
-        } else if (curMilk[1] == curMilk[2]) {
-            if (curMilk[1] > curMilk[0]) {
-                curDisplay = new boolean[]{false, true, true};
-            } else {
-                curDisplay = new boolean[]{true, false, false};
-            }
-        } else {
-            if (curMilk[0] > curMilk[1] && curMilk[0] > curMilk[2]) {
-                curDisplay = new boolean[]{true, false, false};
-            } else if (curMilk[1] > curMilk[0] && curMilk[1] > curMilk[2]) {
-                curDisplay = new boolean[]{false, true, false};
-            } else {
-                curDisplay = new boolean[]{false, false, true};
+        boolean[] curOrder = new boolean[3];
+        int max = Math.max(curMilk[0], Math.max(curMilk[1], curMilk[2]));
+        for (int i = 0; i < 3; i++) {
+            if (curMilk[i] == max) {
+                curOrder[i] = true;
             }
         }
-        return curDisplay;
+        return curOrder;
     }
 }
 

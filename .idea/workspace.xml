@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="simulation hard">
+      <change afterPath="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe/TeamTicTacToe2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2016/February/02_circular_barn/CircularBarn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2016/February/02_circular_barn/CircularBarn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2016/January/03_mowing_the_field/MowingTheField.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2016/January/03_mowing_the_field/MowingTheField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2015/February/01_censoring/Censoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2015/February/01_censoring/Censoring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bronze/2017/December/03_milk_measurement/MilkMeasurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2017/December/03_milk_measurement/MilkMeasurement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2019/February/03_measuring_traffic/MeasuringTraffic.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2019/February/03_measuring_traffic/MeasuringTraffic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/red/Desktop/work/USACO/Bronze/2019/February/03_measuring_traffic",
+    "last_opened_file_path": "/Users/red/Desktop/work/USACO/Bronze/2018/US Open/01_team_tic_tac_toe",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -90,11 +89,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe" />
+      <recent name="$PROJECT_DIR$/Bronze/2015/February/01_censoring" />
       <recent name="$PROJECT_DIR$/Bronze/2019/February/03_measuring_traffic" />
       <recent name="$PROJECT_DIR$/Bronze/2017/December/03_milk_measurement" />
       <recent name="$PROJECT_DIR$/Bronze/2020/December/03_stuck_in_a_rut" />
-      <recent name="$PROJECT_DIR$/Bronze/2015/February/01_censoring" />
-      <recent name="$PROJECT_DIR$/Bronze/2016/January/03_mowing_the_field" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Bronze/2020/February/02_mad_scientist" />
@@ -261,7 +260,8 @@
       <workItem from="1696328540813" duration="1763000" />
       <workItem from="1697642143696" duration="750000" />
       <workItem from="1697705202737" duration="1298000" />
-      <workItem from="1697706925827" duration="4022000" />
+      <workItem from="1697706925827" duration="4368000" />
+      <workItem from="1697795795835" duration="1421000" />
     </task>
     <task id="LOCAL-00001" summary="simulation easy">
       <created>1697642642211</created>
@@ -277,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697706665031</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="simulation hard">
+      <created>1697718442280</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697718442280</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
