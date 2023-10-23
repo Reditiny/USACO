@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="simulation hard">
-      <change afterPath="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe/TeamTicTacToe2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2016/February/01_milk_pails/MilkPails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2016/US Open/01_diamond_collector/DiamondCollector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2017/US Open/02_bovine_genomics/BovineGenomics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2018/January/02_lifeguards/Lifeguards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/01_cow_gymnastics/CowGymnastics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2020/December/02_daisy_chains/DaisyChains.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2020/February/01_triangles/Triangles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2022/US Open/02_counting_liars/CountingLiars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2015/February/01_censoring/Censoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2015/February/01_censoring/Censoring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bronze/2017/December/03_milk_measurement/MilkMeasurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2017/December/03_milk_measurement/MilkMeasurement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe/TeamTicTacToe2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe/TeamTicTacToe2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,27 +80,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/red/Desktop/work/USACO/Bronze/2018/US Open/01_team_tic_tac_toe",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/red/Desktop/work/USACO/Bronze/2018/US Open/01_team_tic_tac_toe&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe" />
-      <recent name="$PROJECT_DIR$/Bronze/2015/February/01_censoring" />
-      <recent name="$PROJECT_DIR$/Bronze/2019/February/03_measuring_traffic" />
       <recent name="$PROJECT_DIR$/Bronze/2017/December/03_milk_measurement" />
-      <recent name="$PROJECT_DIR$/Bronze/2020/December/03_stuck_in_a_rut" />
+      <recent name="$PROJECT_DIR$/Bronze/2018/January/02_lifeguards" />
+      <recent name="$PROJECT_DIR$/Bronze/2020/February/01_triangles" />
+      <recent name="$PROJECT_DIR$/Bronze/2017/US Open/02_bovine_genomics" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Bronze/2020/February/02_mad_scientist" />
@@ -261,7 +268,8 @@
       <workItem from="1697642143696" duration="750000" />
       <workItem from="1697705202737" duration="1298000" />
       <workItem from="1697706925827" duration="4368000" />
-      <workItem from="1697795795835" duration="1421000" />
+      <workItem from="1697795795835" duration="1701000" />
+      <workItem from="1698024099204" duration="11328000" />
     </task>
     <task id="LOCAL-00001" summary="simulation easy">
       <created>1697642642211</created>
@@ -284,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697718442280</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="simulation hard">
+      <created>1697797734997</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697797734997</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

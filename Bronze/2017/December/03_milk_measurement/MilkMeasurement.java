@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.PrintWriter;
+import java.util.Arrays;
 
 /**
  * @author Red
@@ -38,7 +39,7 @@ public class MilkMeasurement {
                 curMilk[1] += measurements[i][1];
                 curMilk[2] += measurements[i][2];
                 boolean[] curDisplay = makeDisplay(curMilk);
-                if (lastDisplay[0] != curDisplay[0] || lastDisplay[1] != curDisplay[1] || lastDisplay[2] != curDisplay[2]) {
+                if (!Arrays.equals(curDisplay, lastDisplay)) {
                     ans++;
                     lastDisplay = curDisplay;
                 }

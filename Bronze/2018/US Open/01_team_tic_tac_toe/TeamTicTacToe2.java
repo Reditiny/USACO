@@ -36,41 +36,20 @@ public class TeamTicTacToe2 {
      * 判断获胜者
      */
     static char[] getWin(char c1, char c2, char c3) {
-        if (c1 == c2 && c3 == c1){
+        if (c1 == c2 && c3 == c1) {
             return new char[]{c1};
         }
         if (c1 == c2 || c1 == c3 || c2 == c3) {
-           return new char[]{getMin(c1, c2, c3), getMax(c1, c2, c3)};
+            return new char[]{(char) Math.min(Math.min(c1, c2), c3), (char) Math.max(Math.max(c1, c2), c3)};
         }
         return new char[]{};
     }
 
-    static void putWin(char[] winChar, HashSet<Character> singleWin, HashSet<String> teamWin){
+    static void putWin(char[] winChar, HashSet<Character> singleWin, HashSet<String> teamWin) {
         if (winChar.length == 1) {
             singleWin.add(winChar[0]);
         } else if (winChar.length == 2) {
             teamWin.add(String.valueOf(winChar));
         }
     }
-
-    static char getMin(char c1, char c2, char c3){
-        if (c1 <= c2 && c1 <= c3){
-            return c1;
-        }
-        if (c2 <= c1 && c2 <= c3){
-            return c2;
-        }
-        return c3;
-    }
-
-    static char getMax(char c1, char c2, char c3){
-        if (c1 >= c2 && c1 >= c3){
-            return c1;
-        }
-        if (c2 >= c1 && c2 >= c3){
-            return c2;
-        }
-        return c3;
-    }
-
 }
