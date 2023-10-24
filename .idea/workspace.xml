@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="simulation hard">
-      <change afterPath="$PROJECT_DIR$/Bronze/2016/February/01_milk_pails/MilkPails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2016/US Open/01_diamond_collector/DiamondCollector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2017/US Open/02_bovine_genomics/BovineGenomics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2018/January/02_lifeguards/Lifeguards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/December/01_cow_gymnastics/CowGymnastics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2020/December/02_daisy_chains/DaisyChains.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2020/February/01_triangles/Triangles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2022/US Open/02_counting_liars/CountingLiars.java" afterDir="false" />
+    <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="simulation hard and complete search normal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2017/December/03_milk_measurement/MilkMeasurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2017/December/03_milk_measurement/MilkMeasurement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe/TeamTicTacToe2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe/TeamTicTacToe2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +259,8 @@
       <workItem from="1697705202737" duration="1298000" />
       <workItem from="1697706925827" duration="4368000" />
       <workItem from="1697795795835" duration="1701000" />
-      <workItem from="1698024099204" duration="11328000" />
+      <workItem from="1698024099204" duration="14553000" />
+      <workItem from="1698127842856" duration="1620000" />
     </task>
     <task id="LOCAL-00001" summary="simulation easy">
       <created>1697642642211</created>
@@ -299,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697797734997</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="simulation hard and complete search normal">
+      <created>1698052831545</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698052831545</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +318,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="simulation easy" />
     <MESSAGE value="simulation hard" />
-    <option name="LAST_COMMIT_MESSAGE" value="simulation hard" />
+    <MESSAGE value="simulation hard and complete search normal" />
+    <option name="LAST_COMMIT_MESSAGE" value="simulation hard and complete search normal" />
   </component>
 </project>
