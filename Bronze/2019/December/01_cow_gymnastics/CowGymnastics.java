@@ -31,7 +31,7 @@ public class CowGymnastics {
         int ans = 0;
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
-                if (better[i][j] == !better[j][i]) {
+                if (better[i][j] != better[j][i]) {
                     ans++;
                 }
             }
