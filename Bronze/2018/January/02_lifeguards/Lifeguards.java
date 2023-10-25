@@ -28,15 +28,27 @@ public class Lifeguards {
         int cover = intervals.get(0).get(1) - intervals.get(0).get(0);
         int lastEnd = intervals.get(0).get(1);
         for (int i = 1; i < intervals.size() - 1; i++) {
-            // 对于当前区间 计算其缺失后所减少的时间
+            // 对于当前区间 i 计算其缺失后所减少的时间  i 区间可能会影响后续多个区间
+            // ---
+            //      ------(i)
+            //           ---(j)
+            //                   ---
+            // ---
+            //  ---------------------(i)
+            //          ---(j)
+            //                      ---
             List<Integer> curInterval = intervals.get(i);
             int gapLastEnd = lastEnd;
             int curGap = 0;
             for (int j = i + 1; j < intervals.size(); j++) {
+                // 依次探查后续区间
                 List<Integer> nextInterval = intervals.get(j);
-                curGap += Math.max(0, Math.min(curInterval.get(1), nextInterval.get(0)) - Math.max(gapLastEnd, curInterval.get(0)));
+                // i 区间在 j 区间范围内所产生的 gap
+                int curGapEnd = Math.min(curInterval.get(1), nextInterval.get(0));
+                int curGapStart = Math.max(gapLastEnd, curInterval.get(0));
+                curGap += Math.max(0, curGapEnd - curGapStart);
                 gapLastEnd = Math.max(gapLastEnd, nextInterval.get(1));
-                if (gapLastEnd > curInterval.get(1)) {
+                if (gapLastEnd > curInterval.get(1)) { // i 区间可能影响多个区间 直到 j 区间的开端大于 i 区间的结尾
                     break;
                 }
             }
