@@ -51,7 +51,7 @@ public class Triangles {
      * 表示三点不符合
      * 点集排序为按照 x 坐标排序 如果 x 坐标相同则按照 y 坐标排序
      * 符合条件的排列如下所示
-     * 3    2 3    2      1 3
+     *   3    2 3    2      1 3
      * 1 2    1      1 3      2
      */
     public static int getArea(List<Integer> point1, List<Integer> point2, List<Integer> point3) {
