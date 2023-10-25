@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="simulation hard and complete search normal">
+    <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="search hard">
+      <change afterPath="$PROJECT_DIR$/Bronze/2016/February/01_milk_pails/MilkPails2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2020/February/01_triangles/Triangles.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2020/February/01_triangles/Triangles.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,27 +72,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/red/Desktop/work/USACO/Bronze/2018/US Open/01_team_tic_tac_toe&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/red/Desktop/work/USACO/Bronze/2016/February/01_milk_pails",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Bronze/2018/US Open/01_team_tic_tac_toe" />
-      <recent name="$PROJECT_DIR$/Bronze/2017/December/03_milk_measurement" />
-      <recent name="$PROJECT_DIR$/Bronze/2018/January/02_lifeguards" />
-      <recent name="$PROJECT_DIR$/Bronze/2020/February/01_triangles" />
-      <recent name="$PROJECT_DIR$/Bronze/2017/US Open/02_bovine_genomics" />
+      <recent name="$PROJECT_DIR$/Bronze/2016/February/01_milk_pails" />
+      <recent name="$PROJECT_DIR$/Bronze/2022/February/01_sleeping_in_the_class" />
+      <recent name="$PROJECT_DIR$/Bronze/2016/February/03_load_balancing" />
+      <recent name="$PROJECT_DIR$/Bronze/2019/January/03_guess_the_animal" />
+      <recent name="$PROJECT_DIR$/Bronze/2017/February/02_why_did_the_cow_cross_the_road_ii" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Bronze/2020/February/02_mad_scientist" />
@@ -260,7 +262,7 @@
       <workItem from="1697706925827" duration="4368000" />
       <workItem from="1697795795835" duration="1701000" />
       <workItem from="1698024099204" duration="14553000" />
-      <workItem from="1698127842856" duration="1620000" />
+      <workItem from="1698127842856" duration="5985000" />
     </task>
     <task id="LOCAL-00001" summary="simulation easy">
       <created>1697642642211</created>
@@ -297,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698052831545</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="search hard">
+      <created>1698139326264</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698139326264</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +328,7 @@
     <MESSAGE value="simulation easy" />
     <MESSAGE value="simulation hard" />
     <MESSAGE value="simulation hard and complete search normal" />
-    <option name="LAST_COMMIT_MESSAGE" value="simulation hard and complete search normal" />
+    <MESSAGE value="search hard" />
+    <option name="LAST_COMMIT_MESSAGE" value="search hard" />
   </component>
 </project>
