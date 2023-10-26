@@ -17,8 +17,6 @@ result = set()
 
 def dfs(count, balance, b1, b2):
     if count == 4:
-        if balance == 34:
-            print(count, balance, b1, b2)
         result.add(balance)
         return
     # take from barn1 to barn 2

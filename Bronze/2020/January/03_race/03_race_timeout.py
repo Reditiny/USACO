@@ -4,7 +4,6 @@ LANG: PYTHON3
 PROG: race
 """
 # http://www.usaco.org/index.php?page=viewproblem2&cpid=989
-import math
 fin = open('race.in', 'r')
 fout = open("race.out", "w")
 K, N = map(int, fin.readline().strip().split())
