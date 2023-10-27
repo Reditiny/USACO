@@ -53,6 +53,9 @@ public class Triangles {
      * 符合条件的排列如下所示
      *   3    2 3    2      1 3
      * 1 2    1      1 3      2
+     * y1 == y2 时为 组合1
+     * x1 == x2 时为 组合2 组合3
+     * y1 == y3 && x2 == x3 时 为组合4
      */
     public static int getArea(List<Integer> point1, List<Integer> point2, List<Integer> point3) {
         if (point1.get(1).equals(point2.get(1)) && point2.get(0).equals(point3.get(0))) {

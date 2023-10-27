@@ -44,7 +44,7 @@ public class LivestockLineup {
      * 递归遍历得到所有顺序
      */
     public static void buildOrders(List<List<String>> orders, List<String> cur) {
-        if (cur.size() == 8) {
+        if (cur.size() == cows.size()) {
             List<String> copy = new ArrayList<String>(cur);
             orders.add(copy);
             return;

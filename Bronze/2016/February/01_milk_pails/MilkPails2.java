@@ -20,15 +20,9 @@ public class MilkPails2 {
         int ans = 0;
         // 搜索范围内遍历得到最大值
         for (int i = 0; i <= maxX; i++) {
-            // 缩小内层遍历的范围 maxY -> (m - x * i) / y
-            for (int j = 0; j <= (m - x * i) / y; j++) {
-                if (x * i + y * j > m) {
-                    break;
-                }
-                if (x * i + y * j > ans) {
-                    ans = x * i + y * j;
-                }
-            }
+            // 对于给定的 i 个 x 确定 y 的数量为 (m - x * i) / y
+            int j = (m - x * i) / y;
+            ans = Math.max(ans, x * i + y * j);
         }
         pw.println(ans);
         pw.close();

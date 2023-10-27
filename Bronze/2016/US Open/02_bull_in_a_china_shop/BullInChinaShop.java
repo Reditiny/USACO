@@ -16,12 +16,12 @@ public class BullInChinaShop {
         BufferedReader r = new BufferedReader(new FileReader("bcs.in"));
         PrintWriter pw = new PrintWriter("bcs.out");
         StringTokenizer line = new StringTokenizer(r.readLine());
-        // 记录所有块 其中 pieces[0] 为完整的块
-        pieces = new boolean[11][8][8];
-        // 记录所有块边缘 排除额外 '.' 的干扰
-        int[][] s = new int[11][4];
         n = Integer.parseInt(line.nextToken());
         int k = Integer.parseInt(line.nextToken());
+        // 记录所有块 其中 pieces[0] 为完整的块  pieces[1]-pieces[k]为 k 个碎块
+        pieces = new boolean[k + 1][n][n];
+        // 记录所有块边缘 排除额外 '.' 的干扰
+        int[][] s = new int[k + 1][n];
         for (int i = 0; i <= k; i++) {
             int left = n - 1;
             int right = 0;
@@ -43,14 +43,25 @@ public class BullInChinaShop {
             s[i] = new int[]{left, right, top, bottom};
         }
 
-        // 遍历所有两两组合
+        // 遍历所有两两组合 第 i 个碎块和第 j 个碎块进行拼接
         for (int i = 1; i <= k; i++) {
             for (int j = i + 1; j <= k; j++) {
-                // 从上到下 从左到右 遍历所有重叠方式
+                // 遍历两个碎块所有可能的拼接方式
+                //   完全重合   部分重合     不重合
+                //                            -----
+                //                            -----
+                //              -----         -----
+                //   -----    -------    -----
+                //   -----    -------    -----
+                //   -----    -----      -----
+                // (1)用第一个碎块依次放置在原块的各个位置上
                 for (int idx = s[i][3] - n + 1; idx <= s[i][2]; idx++) {
                     for (int idy = s[i][1] - n + 1; idy <= s[i][0]; idy++) {
+                        // (2)用第一个碎块依次放置在原块的各个位置上
                         for (int jdx = s[j][3] - n + 1; jdx <= s[j][2]; jdx++) {
                             for (int jdy = s[j][1] - n + 1; jdy <= s[j][0]; jdy++) {
+                                // (1)(2) 可能有很多无效组合 但由于原块中有 '.' 填充的空白空间所以不能确定哪个组合是无效的
+                                // 对于当前组合查看是否与原块一致
                                 boolean good = true;
                                 for (int x = 0; x < n; x++) {
                                     for (int y = 0; y < n; y++) {

@@ -44,7 +44,7 @@ public class CowntactTracing {
         int upperK = 0;
         HashSet<Integer> candidatePatientZero = new HashSet<>();
         for (int i = 1; i <= n; i++) {
-            for (int k = 0; k <= 251; k++) {
+            for (int k = 0; k <= maxT + 1; k++) {    // k 可以取 maxT+1（251）时说明最终为 Infinity
                 if (consistentWithData(i, k)) {
                     lowerK = Math.min(lowerK, k);
                     upperK = Math.max(upperK, k);

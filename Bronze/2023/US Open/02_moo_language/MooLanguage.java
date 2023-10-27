@@ -57,20 +57,23 @@ public class MooLanguage {
                 // type1  noun intransitive-verb
                 curWords += 2 * type1;
                 nounCount -= type1;
-                if (nounCount < 0) {
+                if (nounCount < 0) {    // 当前 type1 数 noun 数量不足
                     continue;
                 }
+                // 两个noun和一个transitive-verb组成一个type2句子
+                int sentenceLimit = Math.min(tverb.size(), nounCount / 2);
+                // 两个type2句子需要一个连词和一个句号  一个type2句子需要一个句号
+                int symbolLimit = Math.min(conjCount, period) * 2 + Math.max(0, period - conjCount);
                 // type2  noun transitive-verb noun  可以得到的最大数量
-                int type2 = Math.min(Math.min(tverb.size(), nounCount / 2), Math.min(conjCount, period) * 2 + Math.max(0, period - conjCount));
+                int type2 = Math.min(sentenceLimit, symbolLimit);
                 curWords += 3 * type2;
                 nounCount -= 2 * type2;
                 // conj 最多能连接的句子数
                 int total = type1 + type2;
-                int connections = type1 + type2 - 1;
-                int canCombine = Math.min((connections + 1) / 2, conjCount);
+                int canCombine = Math.min(total / 2, conjCount);
                 curWords += canCombine;
                 period -= total - canCombine;
-                if (period < 0) {
+                if (period < 0) {   // 当前 type1 数 period 数量不足
                     continue;
                 }
                 // 多余的动词可以用 , noun 接在 type2 后面
@@ -90,7 +93,6 @@ public class MooLanguage {
             pw.println(ans);
             if (ans == 0) {
                 pw.println();
-                ;
                 continue;
             }
             // 构造句子
