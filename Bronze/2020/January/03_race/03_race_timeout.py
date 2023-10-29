@@ -3,6 +3,8 @@ ID: mck15821
 LANG: PYTHON3
 PROG: race
 """
+import math
+
 # http://www.usaco.org/index.php?page=viewproblem2&cpid=989
 fin = open('race.in', 'r')
 fout = open("race.out", "w")
