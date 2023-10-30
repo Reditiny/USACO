@@ -25,9 +25,6 @@ public class Triangles {
         }
         // 按照 x 坐标排序 如果 x 坐标相同则按照 y 坐标排序
         points.sort((o1, o2) -> {
-            if (o1.get(0).equals(o2.get(0))) {
-                return o1.get(1).compareTo(o2.get(1));
-            }
             return o1.get(0).compareTo(o2.get(0));
         });
         int ans = 0;
@@ -47,28 +44,23 @@ public class Triangles {
     }
 
     /**
-     * 获得三角形面积
-     * 表示三点不符合
-     * 点集排序为按照 x 坐标排序 如果 x 坐标相同则按照 y 坐标排序
-     * 符合条件的排列如下所示
-     *   3    2 3    2      1 3
-     * 1 2    1      1 3      2
-     * y1 == y2 时为 组合1
-     * x1 == x2 时为 组合2 组合3
-     * y1 == y3 && x2 == x3 时 为组合4
+     * 获得三角形面积(x1,y1)(x2,y2)(x3,y3) 输出 0 表示三点不符合条件
+     * x1 == x2 时需要有 y3 == y2 || y3 == y1
+     * x1 != x2 时需要有 x3 == x2 && (y1 == y2 || y1 == y3)
      */
     public static int getArea(List<Integer> point1, List<Integer> point2, List<Integer> point3) {
-        if (point1.get(1).equals(point2.get(1)) && point2.get(0).equals(point3.get(0))) {
-            return (point2.get(0) - point1.get(0)) * (point3.get(1) - point1.get(1));
-        }
+        int dx = 0;
+        int dy = 0;
         if (point1.get(0).equals(point2.get(0))) {
+            dy = Math.abs(point2.get(1) - point1.get(1));
             if (point2.get(1).equals(point3.get(1)) || point1.get(1).equals(point3.get(1))) {
-                return (point2.get(1) - point1.get(1)) * (point3.get(0) - point1.get(0));
+                dx = Math.abs(point1.get(0) - point3.get(0));
             }
+        } else if (point3.get(0).equals(point2.get(0))
+                && (point3.get(1).equals(point1.get(1)) || point2.get(1).equals(point1.get(1)))) {
+            dx = Math.abs(point2.get(0) - point1.get(0));
+            dy = Math.abs(point2.get(1) - point3.get(1));
         }
-        if (point1.get(1).equals(point3.get(1)) && point2.get(0).equals(point3.get(0))) {
-            return (point3.get(0) - point1.get(0)) * (point3.get(1) - point2.get(1));
-        }
-        return 0;
+        return dx * dy;
     }
 }

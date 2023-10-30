@@ -49,34 +49,34 @@ public class MooLanguage {
 
             int ans = 0;
             int t1 = 0, t2 = 0, combine = 0, tackEnd = 0;
-            // 遍历两种动词出现的个数 type1:intransitive-verb  type2:transitive-verb
+            // 仅需确定最终答案中使用了多少个 intransitive-verb transitive-verb 和 conjunction
+            // 三者的数量可以确定 noun 和 period 的数量，最终多出的 noun 和 comma 可以全部接在最后一个 type2 句子后
             for (int type1 = 0; type1 <= iverb.size(); type1++) {
+                // 1.遍历得到  intransitive-verb 的数量记为 type1
                 int nounCount = nouns.size(), conjCount = conj.size();
                 int period = p, comma = c;
                 int curWords = 0;
-                // type1  noun intransitive-verb
                 curWords += 2 * type1;
                 nounCount -= type1;
                 if (nounCount < 0) {    // 当前 type1 数 noun 数量不足
                     continue;
                 }
-                // 两个noun和一个transitive-verb组成一个type2句子
+                // 2.根据 noun 和 period 确定 transitive-verb 的数量记为 type2
+                // type2 不能超过当前 noun 数量的一半
                 int sentenceLimit = Math.min(tverb.size(), nounCount / 2);
-                // 两个type2句子需要一个连词和一个句号  一个type2句子需要一个句号
+                // 当存在连词时，一个句号可以对应两个 intransitive-verb；当不存在连词时，一个句号对于一个 intransitive-verb
                 int symbolLimit = Math.min(conjCount, period) * 2 + Math.max(0, period - conjCount);
-                // type2  noun transitive-verb noun  可以得到的最大数量
                 int type2 = Math.min(sentenceLimit, symbolLimit);
                 curWords += 3 * type2;
                 nounCount -= 2 * type2;
-                // conj 最多能连接的句子数
-                int total = type1 + type2;
-                int canCombine = Math.min(total / 2, conjCount);
+                // 3.确定可以使用的 conjunction 数量记为 canCombine
+                int canCombine = Math.min((type1 + type2) / 2, conjCount);
                 curWords += canCombine;
-                period -= total - canCombine;
-                if (period < 0) {   // 当前 type1 数 period 数量不足
+                // 判断 period 的数量是否满足当前 type1 type2 canCombine 的组合
+                if (period < (type1 + type2) - canCombine) {
                     continue;
                 }
-                // 多余的动词可以用 , noun 接在 type2 后面
+                // 多余的动词可以用 , noun 接在最后一个 type2 句子后面
                 int tack = 0;
                 if (type2 > 0) {
                     tack = Math.min(nounCount, comma);

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="fulfill comment on search">
-      <change afterPath="$PROJECT_DIR$/Bronze/2018/December/03_back_and_forth/BackAndForth2.java" afterDir="false" />
+    <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="add set-solution">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2016/US Open/02_bull_in_a_china_shop/BullInChinaShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2016/US Open/02_bull_in_a_china_shop/BullInChinaShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2020/February/01_triangles/Triangles.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2020/February/01_triangles/Triangles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2023/US Open/02_moo_language/MooLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2023/US Open/02_moo_language/MooLanguage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/red/Desktop/work/USACO/Bronze/2018/December/03_back_and_forth",
+    "last_opened_file_path": "/Users/red/Desktop/work/USACO/Bronze/2023/US Open/02_moo_language",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -85,20 +87,23 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Bronze/2018/December/03_back_and_forth" />
       <recent name="$PROJECT_DIR$/Bronze/2023/US Open/02_moo_language" />
-      <recent name="$PROJECT_DIR$/Bronze/2023/US Open/02_moo_language/prob2_bronze_open23" />
-      <recent name="$PROJECT_DIR$/Bronze/2022/US Open/02_counting_liars" />
+      <recent name="$PROJECT_DIR$/Bronze/2020/February/01_triangles" />
+      <recent name="$PROJECT_DIR$/Bronze/2020/February/01_triangles/triangles_bronze_feb20" />
       <recent name="$PROJECT_DIR$/Bronze/2016/US Open/02_bull_in_a_china_shop" />
+      <recent name="$PROJECT_DIR$/Bronze/2019/December/01_cow_gymnastics/gymnastics_bronze_dec19" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bronze/2019/December/01_cow_gymnastics" />
       <recent name="$PROJECT_DIR$/Bronze/2020/February/02_mad_scientist" />
       <recent name="$PROJECT_DIR$/Bronze/2020/February/03_swapity_swap" />
       <recent name="$PROJECT_DIR$/Bronze/2020/February/01_triangles" />
       <recent name="$PROJECT_DIR$/Bronze/2018/December/01_mixing_milk/livecode" />
-      <recent name="$PROJECT_DIR$/Bronze/2019/January/01_shell_game/livecode" />
     </key>
   </component>
   <component name="RunManager">
@@ -262,7 +267,8 @@
       <workItem from="1697795795835" duration="1701000" />
       <workItem from="1698024099204" duration="14553000" />
       <workItem from="1698127842856" duration="17110000" />
-      <workItem from="1698391678666" duration="3280000" />
+      <workItem from="1698391678666" duration="4044000" />
+      <workItem from="1698502806918" duration="9871000" />
     </task>
     <task id="LOCAL-00001" summary="simulation easy">
       <created>1697642642211</created>
@@ -334,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698386200322</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add set-solution">
+      <created>1698399918021</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698399918021</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,6 +373,7 @@
     <MESSAGE value="solution update and search hard" />
     <MESSAGE value="search hard" />
     <MESSAGE value="fulfill comment on search" />
-    <option name="LAST_COMMIT_MESSAGE" value="fulfill comment on search" />
+    <MESSAGE value="add set-solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="add set-solution" />
   </component>
 </project>
