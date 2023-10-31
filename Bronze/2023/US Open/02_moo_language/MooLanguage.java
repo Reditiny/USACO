@@ -65,6 +65,7 @@ public class MooLanguage {
                 // type2 不能超过当前 noun 数量的一半
                 int sentenceLimit = Math.min(tverb.size(), nounCount / 2);
                 // 当存在连词时，一个句号可以对应两个 intransitive-verb；当不存在连词时，一个句号对于一个 intransitive-verb
+                // 首先考虑有连词时，因为此时一个句号可以对应两个动词，之后再看句号有没有剩余
                 int symbolLimit = Math.min(conjCount, period) * 2 + Math.max(0, period - conjCount);
                 int type2 = Math.min(sentenceLimit, symbolLimit);
                 curWords += 3 * type2;

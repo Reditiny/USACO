@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
  * @author Red
  * @version 1.0
  */
-public class BullInChinaShop {
+public class BullInChinaShop2 {
     public static boolean pieces[][][];
     public static int n;
 
@@ -20,43 +20,66 @@ public class BullInChinaShop {
         int k = Integer.parseInt(line.nextToken());
         // 记录所有块 其中 pieces[0] 为完整的块  pieces[1]-pieces[k]为 k 个碎块
         pieces = new boolean[k + 1][n][n];
+        // 记录所有块边缘 排除额外 '.' 的干扰
+        int[][] s = new int[k + 1][n];
         for (int i = 0; i <= k; i++) {
+            int left = n - 1;
+            int right = 0;
+            int top = n - 1;
+            int bottom = 0;
             for (int j = 0; j < n; j++) {
                 String str = r.readLine();
                 for (int l = 0; l < n; l++) {
                     char c = str.charAt(l);
                     pieces[i][j][l] = (c == '#');
+                    if (pieces[i][j][l]) {
+                        bottom = Math.max(bottom, j);
+                        top = Math.min(top, j);
+                        right = Math.max(right, l);
+                        left = Math.min(left, l);
+                    }
                 }
             }
+            s[i] = new int[]{left, right, top, bottom};
         }
+
         // 遍历所有两两组合 第 i 个碎块和第 j 个碎块进行拼接
         for (int i = 1; i <= k; i++) {
             for (int j = i + 1; j <= k; j++) {
                 // 遍历两个碎块所有可能的拼接方式
-                // i 块的下边紧贴原块的上边移动到 i 块的上边紧贴原块的下边
-                for (int iDeltaRow = -(n - 1); iDeltaRow <= n - 1; iDeltaRow++) {
-                    // i 块的右边紧贴原块的左边移动到 i 块的左边紧贴原块的右边
-                    for (int iDeltaColumn = -(n - 1); iDeltaColumn <= n - 1; iDeltaColumn++) {
+                // i 块的下边界紧贴原块的上边移动到 i 块的上边界紧贴原块的下边
+                // 此处对遍历过程有优化将原本块的边界进行缩减，去除边界上填充的 '.'
+                //
+                //  ------------  0
+                //  |          |
+                //  |   ----   |  bottom
+                //  |   |  |   |
+                //  |   ----   |  top
+                //  |          |
+                //  ------------  n-1
+                // 向下移动 (n-1) - s[i][3](bottom) 步时bottom边紧贴n-1边
+                // 向上移动 s[i][2](top) 步时top边紧贴0边
+                for (int iDetalRow = s[i][3] - n + 1; iDetalRow <= s[i][2]; iDetalRow++) {
+                    for (int iDetalCol = s[i][1] - n + 1; iDetalCol <= s[i][0]; iDetalCol++) {
                         // j 块同理
-                        for (int jDeltaRow = -(n - 1); jDeltaRow <= n - 1; jDeltaRow++) {
-                            for (int jDeltaColumn = -(n - 1); jDeltaColumn <= n - 1; jDeltaColumn++) {
-                                // 可能有很多无效组合 但由于原块中有 '.' 填充的空白空间所以不能确定哪个组合是无效的
+                        for (int jDetalRow = s[j][3] - n + 1; jDetalRow <= s[j][2]; jDetalRow++) {
+                            for (int jDetalCol = s[j][1] - n + 1; jDetalCol <= s[j][0]; jDetalCol++) {
                                 // 对于当前组合查看是否与原块一致
                                 boolean good = true;
-                                for (int curRow = 0; curRow < n; curRow++) {
-                                    for (int curColumn = 0; curColumn < n; curColumn++) {
+                                for (int x = 0; x < n; x++) {
+                                    for (int y = 0; y < n; y++) {
                                         // (curRow,curColumn)为原块的坐标
                                         // (curRow + iDeltaRow,curColumn + iDeltaColumn)为 i 块上对应(curRow,curColumn)的坐标
-                                        boolean iPiece = check(i, curRow + iDeltaRow, curColumn + iDeltaColumn);
+                                        boolean iPiece = check(i, x + iDetalRow, y + iDetalCol);
                                         // (curRow + jDeltaRow,curColumn + jDeltaColumn)为 j 块上对应(curRow,curColumn)的坐标
-                                        boolean jPiece = check(j, curRow + jDeltaRow, curColumn + jDeltaColumn);
+                                        boolean jPiece = check(j, x + jDetalRow, y + jDetalCol);
                                         // 两块对应位置同时为 '#' 说明无法这样拼接
                                         if (iPiece && jPiece) {
                                             good = false;
                                             break;
                                         }
                                         // 是否与原块一致
-                                        if (pieces[0][curRow][curColumn] != (iPiece || jPiece)) {
+                                        if (pieces[0][x][y] != (iPiece || jPiece)) {
                                             good = false;
                                             break;
                                         }
@@ -78,7 +101,7 @@ public class BullInChinaShop {
     }
 
     /**
-     * 检查当前块指定位置上是否为 '#'
+     * 检查当前块是否为 '#'
      */
     static boolean check(int piece, int x, int y) {
         return x >= 0 && x < n && y >= 0 && y < n && pieces[piece][x][y];

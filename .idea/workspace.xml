@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="add set-solution">
+    <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="update BullInChinaShop MooLanguage and Triangles Solutions">
+      <change afterPath="$PROJECT_DIR$/Bronze/2016/US Open/02_bull_in_a_china_shop/BullInChinaShop2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bronze/2016/US Open/02_bull_in_a_china_shop/BullInChinaShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2016/US Open/02_bull_in_a_china_shop/BullInChinaShop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bronze/2020/February/01_triangles/Triangles.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2020/February/01_triangles/Triangles.java" afterDir="false" />
@@ -25,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Ad_Hoc" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +42,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1697707085" />
+                    <option name="lastUsedInstant" value="1698711919" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="Ad_Hoc" />
+                    <option name="lastUsedInstant" value="1698648564" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="yesterday" />
@@ -73,29 +78,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/red/Desktop/work/USACO/Bronze/2023/US Open/02_moo_language",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/red/Desktop/work/USACO/Bronze/2023/US Open/02_moo_language&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Bronze/2023/US Open/02_moo_language" />
+      <recent name="$PROJECT_DIR$/Bronze/2016/US Open/02_bull_in_a_china_shop" />
       <recent name="$PROJECT_DIR$/Bronze/2020/February/01_triangles" />
       <recent name="$PROJECT_DIR$/Bronze/2020/February/01_triangles/triangles_bronze_feb20" />
-      <recent name="$PROJECT_DIR$/Bronze/2016/US Open/02_bull_in_a_china_shop" />
       <recent name="$PROJECT_DIR$/Bronze/2019/December/01_cow_gymnastics/gymnastics_bronze_dec19" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -268,7 +273,8 @@
       <workItem from="1698024099204" duration="14553000" />
       <workItem from="1698127842856" duration="17110000" />
       <workItem from="1698391678666" duration="4044000" />
-      <workItem from="1698502806918" duration="9871000" />
+      <workItem from="1698502806918" duration="16432000" />
+      <workItem from="1698684292938" duration="1502000" />
     </task>
     <task id="LOCAL-00001" summary="simulation easy">
       <created>1697642642211</created>
@@ -347,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698399918021</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update BullInChinaShop MooLanguage and Triangles Solutions">
+      <created>1698648466232</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698648466232</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,6 +387,7 @@
     <MESSAGE value="search hard" />
     <MESSAGE value="fulfill comment on search" />
     <MESSAGE value="add set-solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="add set-solution" />
+    <MESSAGE value="update BullInChinaShop MooLanguage and Triangles Solutions" />
+    <option name="LAST_COMMIT_MESSAGE" value="update BullInChinaShop MooLanguage and Triangles Solutions" />
   </component>
 </project>
