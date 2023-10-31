@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="update BullInChinaShop MooLanguage and Triangles Solutions">
-      <change afterPath="$PROJECT_DIR$/Bronze/2016/US Open/02_bull_in_a_china_shop/BullInChinaShop2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2017/US Open/03_modern_art/ModernArt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2018/February/02_hoofball/Hoofball.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2018/February/03_taming_the_herd/TamingTheHerd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2018/US Open/02_milking_order/MilkingOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/February/01_sleepy_cow_herding/SleepyCowHerding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2019/January/02_sleepy_cow_sorting/SleepyCowSorting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2023/US Open/01_feb/FEB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2016/US Open/02_bull_in_a_china_shop/BullInChinaShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2016/US Open/02_bull_in_a_china_shop/BullInChinaShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2020/February/01_triangles/Triangles.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2020/February/01_triangles/Triangles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bronze/2023/US Open/02_moo_language/MooLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2023/US Open/02_moo_language/MooLanguage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Ad_Hoc" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,12 +44,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1698711919" />
+                    <option name="branchName" value="Ad_Hoc" />
+                    <option name="lastUsedInstant" value="1698735058" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="Ad_Hoc" />
-                    <option name="lastUsedInstant" value="1698648564" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1698711919" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="yesterday" />
@@ -78,30 +81,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/red/Desktop/work/USACO/Bronze/2023/US Open/02_moo_language&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/red/Desktop/work/USACO/Bronze/2019/January/02_sleepy_cow_sorting",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Bronze/2023/US Open/02_moo_language" />
-      <recent name="$PROJECT_DIR$/Bronze/2016/US Open/02_bull_in_a_china_shop" />
-      <recent name="$PROJECT_DIR$/Bronze/2020/February/01_triangles" />
-      <recent name="$PROJECT_DIR$/Bronze/2020/February/01_triangles/triangles_bronze_feb20" />
-      <recent name="$PROJECT_DIR$/Bronze/2019/December/01_cow_gymnastics/gymnastics_bronze_dec19" />
+      <recent name="$PROJECT_DIR$/Bronze/2019/January/02_sleepy_cow_sorting" />
+      <recent name="$PROJECT_DIR$/Bronze/2023/US Open/01_feb" />
+      <recent name="$PROJECT_DIR$/Bronze/2018/February/02_hoofball" />
+      <recent name="$PROJECT_DIR$/Bronze/2017/US Open/03_modern_art" />
+      <recent name="$PROJECT_DIR$/Bronze/2018/February/03_taming_the_herd" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Bronze/2019/December/01_cow_gymnastics" />
