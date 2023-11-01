@@ -25,30 +25,30 @@ public class CountingLiars {
                 lCows.add(Integer.parseInt(strings[1]));
             }
         }
-        // gCows 从小到大 lCows 从大到小排序
-        // 排序规则并不固定 此处的排序方式是为了让撒谎的牛都出现在指定位置的后面
-        gCows.sort(Integer::compareTo);
+        // gCows lCows 从大到小排序
+        // 排序规则并不固定 不同的排序规则会影响遍历的顺序以及目标牛的区间
+        gCows.sort((o1, o2) -> o2 - o1);
         lCows.sort((o1, o2) -> o2 - o1);
         int ans = Integer.MAX_VALUE;
         int j = 0;
         // 双指针O(n) 移动过程中正确的位置在[gCows.get(i),lCows.get(j)]区间
         // 双指针算法需要保证遍历过程中的单调性，才能确保 j 指针可以单方向的移动
-        for (int i = gCows.size() - 1; i >= 0; i--) {
-            // i 从后往前遍历为了让正确区间的下限不断减小（遍历顺序与排序顺序相关）
+        for (int i = 0; i < gCows.size() ; i++) {
+            // i 的遍历方式要让正确区间的下限不断减小（遍历顺序与排序顺序相关）
             // 由于区间的下限是在减少因此遍历过程中区间的下限不会超过当前的上限，可以保证上限单调改变而不用从头开始遍历
             while (j < lCows.size() && gCows.get(i) <= lCows.get(j)) {
                 j++;
             }
-            // 此时正确位置在[11,13]区间 指针移动过程中两者后面的元素为撒谎的牛
-            //                 i
-            // gCows [1,3,5,7,11,24]
+            // 此时正确位置在[11,13]区间 指针移动过程中 i 前和 j 后的牛为撒谎的牛
+            //            i
+            // gCows [24,11,7,5,3,1]
             // lCows [19,13,9,7,5,2]
             //            j
             if (j == lCows.size()) {
-                ans = Math.min(ans, gCows.size() - i - 1);
+                ans = Math.min(ans, i);
                 break;
             }
-            ans = Math.min(ans, gCows.size() - i - 1 + lCows.size() - j);
+            ans = Math.min(ans, i + lCows.size() - j);
         }
         pw.println(ans);
         pw.close();

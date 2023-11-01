@@ -23,7 +23,7 @@ public class Triangles {
             point.add(Integer.parseInt(st.nextToken()));
             points.add(point);
         }
-        // 按照 x 坐标排序
+        // 按照 x 坐标排序 如果 x 坐标相同则按照 y 坐标排序
         points.sort((o1, o2) -> {
             return o1.get(0).compareTo(o2.get(0));
         });
@@ -46,7 +46,7 @@ public class Triangles {
     /**
      * 获得三角形面积(x1,y1)(x2,y2)(x3,y3) 输出 0 表示三点不符合条件
      * x1 == x2 时需要有 y3 == y2 || y3 == y1
-     * x1 != x2 时需要有 x3 == x2 && (y1 == y2 || y1 == y3)
+     * x3 == x2 时需要有 y1 == y2 || y1 == y3
      */
     public static int getArea(List<Integer> point1, List<Integer> point2, List<Integer> point3) {
         int dx = 0;
@@ -56,10 +56,11 @@ public class Triangles {
             if (point2.get(1).equals(point3.get(1)) || point1.get(1).equals(point3.get(1))) {
                 dx = Math.abs(point1.get(0) - point3.get(0));
             }
-        } else if (point3.get(0).equals(point2.get(0))
-                && (point3.get(1).equals(point1.get(1)) || point2.get(1).equals(point1.get(1)))) {
-            dx = Math.abs(point2.get(0) - point1.get(0));
-            dy = Math.abs(point2.get(1) - point3.get(1));
+        } else if (point3.get(0).equals(point2.get(0))) {
+            dy = Math.abs(point3.get(1) - point2.get(1));
+            if (point3.get(1).equals(point1.get(1)) || point2.get(1).equals(point1.get(1))) {
+                dx = Math.abs(point2.get(0) - point1.get(0));
+            }
         }
         return dx * dy;
     }

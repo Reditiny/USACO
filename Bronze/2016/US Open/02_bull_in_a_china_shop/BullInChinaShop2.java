@@ -22,25 +22,25 @@ public class BullInChinaShop2 {
         pieces = new boolean[k + 1][n][n];
         // 记录所有块边缘 排除额外 '.' 的干扰
         int[][] s = new int[k + 1][n];
-        for (int i = 0; i <= k; i++) {
-            int left = n - 1;
-            int right = 0;
-            int top = n - 1;
-            int bottom = 0;
-            for (int j = 0; j < n; j++) {
+        for (int row = 0; row <= k; row++) {
+            int right = n - 1;
+            int left = 0;
+            int bottom = n - 1;
+            int top = 0;
+            for (int col = 0; col < n; col++) {
                 String str = r.readLine();
                 for (int l = 0; l < n; l++) {
                     char c = str.charAt(l);
-                    pieces[i][j][l] = (c == '#');
-                    if (pieces[i][j][l]) {
-                        bottom = Math.max(bottom, j);
-                        top = Math.min(top, j);
-                        right = Math.max(right, l);
-                        left = Math.min(left, l);
+                    pieces[row][col][l] = (c == '#');
+                    if (pieces[row][col][l]) {
+                        top = Math.max(top, col);
+                        bottom = Math.min(bottom, col);
+                        left = Math.max(left, l);
+                        right = Math.min(right, l);
                     }
                 }
             }
-            s[i] = new int[]{left, right, top, bottom};
+            s[row] = new int[]{right, left, bottom, top};
         }
 
         // 遍历所有两两组合 第 i 个碎块和第 j 个碎块进行拼接
@@ -52,13 +52,13 @@ public class BullInChinaShop2 {
                 //
                 //  ------------  0
                 //  |          |
-                //  |   ----   |  bottom
-                //  |   |  |   |
                 //  |   ----   |  top
+                //  |   |  |   |
+                //  |   ----   |  bottom
                 //  |          |
                 //  ------------  n-1
-                // 向下移动 (n-1) - s[i][3](bottom) 步时bottom边紧贴n-1边
-                // 向上移动 s[i][2](top) 步时top边紧贴0边
+                // 向下移动 (n-1) - s[i][3](top) 步时top边紧贴n-1边
+                // 向上移动 s[i][2](bottom) 步时bottom边紧贴0边
                 for (int iDetalRow = s[i][3] - n + 1; iDetalRow <= s[i][2]; iDetalRow++) {
                     for (int iDetalCol = s[i][1] - n + 1; iDetalCol <= s[i][0]; iDetalCol++) {
                         // j 块同理

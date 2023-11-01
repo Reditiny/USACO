@@ -101,6 +101,9 @@ public class MooLanguage {
             // type1
             for (int j = 0; j < t1; j++) {
                 List<String> sentence = new ArrayList<String>();
+                // 从数组中移除任意一个数据应该优先从末尾移除
+                // 因为数组的存储方式为顺序存储，移除末尾元素直接移除即可，复杂度为 O(1)
+                // 若要移除首元素则需要将后续所有元素都向前移动一位，复杂度为 O(n)
                 sentence.add(nouns.remove(nouns.size() - 1));
                 sentence.add(iverb.remove(iverb.size() - 1));
                 sentences.add(sentence);
@@ -117,17 +120,20 @@ public class MooLanguage {
             StringBuilder output = new StringBuilder();
             for (int j = 0; j < sentences.size(); j++) {
                 for (String k : sentences.get(j)) {
+                    // 此处不建议使用以下两种方式 因为他们都会构造新的 "k " 字符串带来额外开销
+                    // output.append(String.join(k, " "));
+                    // output.append(k + " ");
                     output.append(k).append(" ");
                 }
                 if (j % 2 == 0 && combine > 0) {
                     combine--;
-                    output.append(conj.get(conj.size() - 1)).append(" ");
-                    conj.remove(conj.size() - 1);
+                    output.append(conj.remove(conj.size() - 1)).append(" ");
                 } else {
                     output.deleteCharAt(output.length() - 1);
                     output.append(". ");
                 }
             }
+            // 上一个循环结束后句子的结尾有两种可能 "sentence conj" 或者 "sentence. " 最后一个字符均需要删除
             output.deleteCharAt(output.length() - 1);
             if (tackEnd > 0) {
                 output.deleteCharAt(output.length() - 1);
