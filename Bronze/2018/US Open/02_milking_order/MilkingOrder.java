@@ -11,16 +11,22 @@ public class MilkingOrder {
     static int[] cowOrder;
     static List<Integer> cowHierarchy;
 
-    static Map<Integer, Integer> cowToOrder = new HashMap<>();
+    static int n;
+
+    static int[] cowToOrder;
 
     public static void main(String[] args) throws Exception {
         BufferedReader r = new BufferedReader(new FileReader("milkorder.in"));
         PrintWriter pw = new PrintWriter("milkorder.out");
         StringTokenizer st = new StringTokenizer(r.readLine());
-        int n = Integer.parseInt(st.nextToken());
+        n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
         int k = Integer.parseInt(st.nextToken());
-        cowOrder = new int[n];
+
+        // index 为牛的编号 [index] 为该牛要求的顺序
+        // 这里额外多申请一个空间是为了让默认值 0 表示该牛没有要求顺序
+        cowToOrder = new int[n + 1];
+        cowOrder = new int[n + 1];
         cowHierarchy = new ArrayList<Integer>();
         st = new StringTokenizer(r.readLine());
         boolean hierarchyContainCow1 = false;
@@ -35,19 +41,19 @@ public class MilkingOrder {
             st = new StringTokenizer(r.readLine());
             int cow = Integer.parseInt(st.nextToken());
             int position = Integer.parseInt(st.nextToken());
-            cowOrder[position - 1] = cow;
-            cowToOrder.put(cow, position - 1);
+            cowOrder[position] = cow;
+            cowToOrder[cow] = position;
         }
-        int lastPosition = 0;
+        int lastPosition = 1;
         // hierarchy 中是否包含 cow1 会有不同的处理方案
         if (hierarchyContainCow1) {
             lastPosition = putPrefixHierarchy();
         } else {
             putAllHierarchy();
         }
-        for (int i = lastPosition; i < n; i++) {
+        for (int i = lastPosition; i <= n; i++) {
             if (cowOrder[i] == 0) {
-                pw.println(i + 1);
+                pw.println(i);
                 break;
             }
         }
@@ -55,44 +61,39 @@ public class MilkingOrder {
     }
 
     /**
-     * 将 Hierarchy 中 1 前面的牛都按序放入队列中
+     * 将 Hierarchy 中 1 前面的牛从前完后依次放入队列中
      *
      * @return 1 前面最后一个牛的位置
      */
     private static int putPrefixHierarchy() {
-        int lastPosition = 0;
-        while (cowOrder[lastPosition] != 0) {
-            lastPosition++;
-        }
+        int lastPosition = 1;
         for (int i = 0; i < cowHierarchy.size(); i++) {
             int curCow = cowHierarchy.get(i);
-            if (curCow == 1) {
-                break;
-            }
-            if (cowToOrder.containsKey(curCow)) {
-                lastPosition = cowToOrder.get(curCow);
+            if (cowToOrder[curCow] != 0) {
+                lastPosition = cowToOrder[curCow];
             } else {
                 while (cowOrder[lastPosition] != 0) {
                     lastPosition++;
                 }
             }
+            if (curCow == 1) {
+                break;
+            }
             cowOrder[lastPosition] = curCow;
+
         }
         return lastPosition;
     }
 
     /**
-     * 将 Hierarchy 中所有牛都按序放入队列中
+     * 将 Hierarchy 中所有牛从后往前依次放入队列中
      */
     static public void putAllHierarchy() {
-        int lastPosition = cowOrder.length - 1;
-        while (cowOrder[lastPosition] != 0) {
-            lastPosition--;
-        }
+        int lastPosition = n;
         for (int i = cowHierarchy.size() - 1; i >= 0; i--) {
             int curCow = cowHierarchy.get(i);
-            if (cowToOrder.containsKey(curCow)) {
-                lastPosition = cowToOrder.get(curCow);
+            if (cowToOrder[curCow] != 0) {
+                lastPosition = cowToOrder[curCow];
             } else {
                 while (cowOrder[lastPosition] != 0) {
                     lastPosition--;

@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c5b032-21c7-4b5e-80aa-f036bc85f2d0" name="Default Changelist" comment="update BullInChinaShop MooLanguage and Triangles Solutions">
-      <change afterPath="$PROJECT_DIR$/Bronze/2017/US Open/03_modern_art/ModernArt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2018/February/02_hoofball/Hoofball.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2018/February/03_taming_the_herd/TamingTheHerd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2018/US Open/02_milking_order/MilkingOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/February/01_sleepy_cow_herding/SleepyCowHerding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2019/January/02_sleepy_cow_sorting/SleepyCowSorting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bronze/2023/US Open/01_feb/FEB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bronze/2018/February/02_hoofball/Hoofball2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2018/US Open/02_milking_order/MilkingOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2018/US Open/02_milking_order/MilkingOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2019/January/02_sleepy_cow_sorting/SleepyCowSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2019/January/02_sleepy_cow_sorting/SleepyCowSorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bronze/2023/US Open/01_feb/FEB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bronze/2023/US Open/01_feb/FEB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +83,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/red/Desktop/work/USACO/Bronze/2019/January/02_sleepy_cow_sorting",
+    "last_opened_file_path": "/Users/red/Desktop/work/USACO/Bronze/2018/February/02_hoofball",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -100,11 +97,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bronze/2018/February/02_hoofball" />
+      <recent name="$PROJECT_DIR$/Bronze/2018/US Open/02_milking_order" />
       <recent name="$PROJECT_DIR$/Bronze/2019/January/02_sleepy_cow_sorting" />
       <recent name="$PROJECT_DIR$/Bronze/2023/US Open/01_feb" />
-      <recent name="$PROJECT_DIR$/Bronze/2018/February/02_hoofball" />
       <recent name="$PROJECT_DIR$/Bronze/2017/US Open/03_modern_art" />
-      <recent name="$PROJECT_DIR$/Bronze/2018/February/03_taming_the_herd" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Bronze/2019/December/01_cow_gymnastics" />
@@ -363,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698648466232</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Ad Hoc">
+      <created>1698736436333</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1698736436333</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,6 +395,7 @@
     <MESSAGE value="fulfill comment on search" />
     <MESSAGE value="add set-solution" />
     <MESSAGE value="update BullInChinaShop MooLanguage and Triangles Solutions" />
-    <option name="LAST_COMMIT_MESSAGE" value="update BullInChinaShop MooLanguage and Triangles Solutions" />
+    <MESSAGE value="Ad Hoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ad Hoc" />
   </component>
 </project>

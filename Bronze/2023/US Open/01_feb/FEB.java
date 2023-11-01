@@ -12,7 +12,6 @@ import java.util.TreeSet;
  */
 public class FEB {
     static int n;
-    static TreeSet<Integer> ans = new TreeSet<>();
 
     public static void main(String[] args) throws Exception {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
@@ -26,7 +25,7 @@ public class FEB {
             prefixCount++;
         }
         maxLevel += prefixCount;
-        int startIndex = 0;
+        int startIndex = prefixCount;
         // 找到字符串中所有 "B/E + 若干F + B/E" 的子串
         while (startIndex < n) {
             if (messages[startIndex] == 'F') {
@@ -40,6 +39,8 @@ public class FEB {
             if (endIndex == n) {
                 break;
             }
+            // endIndex - startIndex 为前闭后开(或前开后闭)区间的长度
+            // 这里通过 +1 取闭区间长度
             int length = endIndex - startIndex + 1;
             // 首尾相同 如 BFF...FFB
             if (messages[endIndex] == messages[startIndex]) {
@@ -62,12 +63,9 @@ public class FEB {
             }
             startIndex = endIndex;
         }
-        // 单独处理后缀的 F
-        int suffixCount = 0;
-        while (suffixCount < n && messages[n - 1 - suffixCount] == 'F') {
-            suffixCount++;
-        }
-        if (suffixCount == n) {
+        // 后缀 F 个数
+        int suffixCount = n - 1 - startIndex;
+        if (prefixCount == n) {
             // 字符串全是 F
             minLevel = 0;
             maxLevel = n - 1;
