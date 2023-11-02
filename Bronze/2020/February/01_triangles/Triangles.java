@@ -23,7 +23,7 @@ public class Triangles {
             point.add(Integer.parseInt(st.nextToken()));
             points.add(point);
         }
-        // 按照 x 坐标排序 如果 x 坐标相同则按照 y 坐标排序
+        // 按照 x 坐标排序
         points.sort((o1, o2) -> {
             return o1.get(0).compareTo(o2.get(0));
         });
