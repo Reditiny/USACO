@@ -8,13 +8,13 @@ import java.util.*;
  * @version 1.0
  */
 public class MilkingOrder {
-    // index 为顺序 [index] 为牛的编号 用于寻找空位以及最后输出
-    static int[] cowOrder;
+    // index 为顺序位置 [index] 为牛的编号 用于寻找空位以及最后输出
+    static int[] positionToCow;
     static List<Integer> cowHierarchy;
     static int n;
-    // index 为牛的编号 [index] 为该牛要求的顺序 [index] == 0 表示该牛没有要求顺序
-    // 用于快速查找牛所要求的顺序
-    static int[] cowToOrder;
+    // index 为牛的编号 [index] 为该牛要求的顺序位置 [index] == 0 表示该牛没有要求顺序位置
+    // 用于快速查找牛所要求的顺序位置
+    static int[] cowToPosition;
 
     public static void main(String[] args) throws Exception {
         BufferedReader r = new BufferedReader(new FileReader("milkorder.in"));
@@ -24,10 +24,9 @@ public class MilkingOrder {
         int m = Integer.parseInt(st.nextToken());
         int k = Integer.parseInt(st.nextToken());
 
-        // index 为牛的编号 [index] 为该牛要求的顺序
-        // 这里额外多申请一个空间是为了让默认值 0 表示该牛没有要求顺序
-        cowToOrder = new int[n + 1];
-        cowOrder = new int[n + 1];
+        // 这里额外多申请一个空间是为了让默认值 0 表示该牛没有要求顺序位置
+        cowToPosition = new int[n + 1];
+        positionToCow = new int[n + 1];
         cowHierarchy = new ArrayList<Integer>();
         st = new StringTokenizer(r.readLine());
         boolean hierarchyContainCow1 = false;
@@ -42,8 +41,8 @@ public class MilkingOrder {
             st = new StringTokenizer(r.readLine());
             int cow = Integer.parseInt(st.nextToken());
             int position = Integer.parseInt(st.nextToken());
-            cowOrder[position] = cow;
-            cowToOrder[cow] = position;
+            positionToCow[position] = cow;
+            cowToPosition[cow] = position;
         }
         int lastPosition = 1;
         // hierarchy 中是否包含 cow1 会有不同的处理方案
@@ -53,7 +52,7 @@ public class MilkingOrder {
             putAllHierarchy();
         }
         for (int i = lastPosition; i <= n; i++) {
-            if (cowOrder[i] == 0) {
+            if (positionToCow[i] == 0) {
                 pw.println(i);
                 break;
             }
@@ -70,17 +69,17 @@ public class MilkingOrder {
         int lastPosition = 1;
         for (int i = 0; i < cowHierarchy.size(); i++) {
             int curCow = cowHierarchy.get(i);
-            if (cowToOrder[curCow] != 0) {
-                lastPosition = cowToOrder[curCow];
+            if (cowToPosition[curCow] != 0) {
+                lastPosition = cowToPosition[curCow];
             } else {
-                while (cowOrder[lastPosition] != 0) {
+                while (positionToCow[lastPosition] != 0) {
                     lastPosition++;
                 }
             }
             if (curCow == 1) {
                 break;
             }
-            cowOrder[lastPosition] = curCow;
+            positionToCow[lastPosition] = curCow;
 
         }
         return lastPosition;
@@ -93,14 +92,14 @@ public class MilkingOrder {
         int lastPosition = n;
         for (int i = cowHierarchy.size() - 1; i >= 0; i--) {
             int curCow = cowHierarchy.get(i);
-            if (cowToOrder[curCow] != 0) {
-                lastPosition = cowToOrder[curCow];
+            if (cowToPosition[curCow] != 0) {
+                lastPosition = cowToPosition[curCow];
             } else {
-                while (cowOrder[lastPosition] != 0) {
+                while (positionToCow[lastPosition] != 0) {
                     lastPosition--;
                 }
             }
-            cowOrder[lastPosition] = curCow;
+            positionToCow[lastPosition] = curCow;
         }
     }
 }
