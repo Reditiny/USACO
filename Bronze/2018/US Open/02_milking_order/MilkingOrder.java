@@ -8,11 +8,12 @@ import java.util.*;
  * @version 1.0
  */
 public class MilkingOrder {
+    // index 为顺序 [index] 为牛的编号 用于寻找空位以及最后输出
     static int[] cowOrder;
     static List<Integer> cowHierarchy;
-
     static int n;
-
+    // index 为牛的编号 [index] 为该牛要求的顺序 [index] == 0 表示该牛没有要求顺序
+    // 用于快速查找牛所要求的顺序
     static int[] cowToOrder;
 
     public static void main(String[] args) throws Exception {
@@ -61,7 +62,7 @@ public class MilkingOrder {
     }
 
     /**
-     * 将 Hierarchy 中 1 前面的牛从前完后依次放入队列中
+     * 将 Hierarchy 中 1 前面的牛从前往后依次放入队列中
      *
      * @return 1 前面最后一个牛的位置
      */

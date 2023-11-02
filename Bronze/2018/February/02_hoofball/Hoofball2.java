@@ -66,15 +66,4 @@ public class Hoofball2 {
         pw.println(ans);
         pw.close();
     }
-
-    static int elementCount(List<Integer> list, int element) {
-        int count = 0;
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) == element) {
-                count++;
-            }
-        }
-        return count;
-    }
-
 }
