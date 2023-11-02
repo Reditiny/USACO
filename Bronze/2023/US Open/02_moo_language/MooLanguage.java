@@ -125,7 +125,8 @@ public class MooLanguage {
                     // output.append(k + " ");
                     output.append(k).append(" ");
                 }
-                if (j % 2 == 0 && combine > 0) {
+                if (j % 2 == 0 && j != sentences.size() - 1 && combine > 0) {
+                    // 每两个句子可以插入一个连词 且当前句子不能为最后一个句子
                     combine--;
                     output.append(conj.remove(conj.size() - 1)).append(" ");
                 } else {
@@ -133,7 +134,6 @@ public class MooLanguage {
                     output.append(". ");
                 }
             }
-            // 上一个循环结束后句子的结尾有两种可能 "sentence conj" 或者 "sentence. " 最后一个字符均需要删除
             output.deleteCharAt(output.length() - 1);
             if (tackEnd > 0) {
                 output.deleteCharAt(output.length() - 1);

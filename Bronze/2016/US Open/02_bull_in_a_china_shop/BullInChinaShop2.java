@@ -22,11 +22,11 @@ public class BullInChinaShop2 {
         pieces = new boolean[k + 1][n][n];
         // 记录所有块边缘 排除额外 '.' 的干扰
         int[][] s = new int[k + 1][n];
-        for (int row = 0; row <= k; row++) {
-            int right = n - 1;
-            int left = 0;
-            int bottom = n - 1;
-            int top = 0;
+        for (int row = 0; row <= k; row++) {// 原始块的边界范围                    由于存在 '.' 的填充所以需要缩减边界
+            int left = n - 1;               // n-1  --------  ----- bottom      例如 找下边界就相当于找最小值
+            int right = 0;                  //      |      |                    所以需要从最大值n-1开始找不断更新变小
+            int bottom = n - 1;             //      |      |
+            int top = 0;                    //  0   --------  n-1
             for (int col = 0; col < n; col++) {
                 String str = r.readLine();
                 for (int l = 0; l < n; l++) {
@@ -35,14 +35,13 @@ public class BullInChinaShop2 {
                     if (pieces[row][col][l]) {
                         top = Math.max(top, col);
                         bottom = Math.min(bottom, col);
-                        left = Math.max(left, l);
-                        right = Math.min(right, l);
+                        right = Math.max(right, l);
+                        left = Math.min(left, l);
                     }
                 }
             }
-            s[row] = new int[]{right, left, bottom, top};
+            s[row] = new int[]{left, right, bottom, top};
         }
-
         // 遍历所有两两组合 第 i 个碎块和第 j 个碎块进行拼接
         for (int i = 1; i <= k; i++) {
             for (int j = i + 1; j <= k; j++) {
@@ -50,15 +49,36 @@ public class BullInChinaShop2 {
                 // i 块的下边界紧贴原块的上边移动到 i 块的上边界紧贴原块的下边
                 // 此处对遍历过程有优化将原本块的边界进行缩减，去除边界上填充的 '.'
                 //
-                //  ------------  0
-                //  |          |
-                //  |   ----   |  top
-                //  |   |  |   |
-                //  |   ----   |  bottom
-                //  |          |
-                //  ------------  n-1
-                // 向下移动 (n-1) - s[i][3](top) 步时top边紧贴n-1边
-                // 向上移动 s[i][2](bottom) 步时bottom边紧贴0边
+                //        left right
+                //  n-1 ------------
+                //      |          |
+                //      |   ----   |  top
+                //      |   |  |   |
+                //      |   ----   |  bottom
+                //      |          |
+                //    0 ------------
+                //
+                //  向上移动 (n-1) - s[i][3](top) 步时top边紧贴n-1边
+                //
+                //   n-1 ------------   top
+                //      |  |       |
+                //      ----       |   bottom
+                //      |          |
+                //      |          |
+                //      |          |
+                //    0 ------------
+                //
+                //  开始遍历直到 bottom 边紧贴 0 边 相对于最开始的位置就是向下移动s[i][2](bottom) 步
+                //
+                //   n-1 ------------
+                //      |          |
+                //      |          |
+                //      |          |
+                //      ----       |  top
+                //      |  |       |
+                //    0 ------------  bottom
+                //
+                // 水平方向同理 另一块同理
                 for (int iDetalRow = s[i][3] - n + 1; iDetalRow <= s[i][2]; iDetalRow++) {
                     for (int iDetalCol = s[i][1] - n + 1; iDetalCol <= s[i][0]; iDetalCol++) {
                         // j 块同理
