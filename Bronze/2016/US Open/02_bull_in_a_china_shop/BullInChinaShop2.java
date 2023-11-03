@@ -23,10 +23,10 @@ public class BullInChinaShop2 {
         // 记录所有块边缘 排除额外 '.' 的干扰
         int[][] s = new int[k + 1][n];      // 以 bottom 记视觉上的下边界，top 记视觉上的上边界
         for (int row = 0; row <= k; row++) {// 但因为二维数组的原点在左上角所以从索引上看bottom的值会更大
-            int left = n - 1;               //  0   --------   ----- bottom             寻找bottom就是在找最大值
-            int right = 0;                  //      |  --  |              ----- top     从0开始迭代每次出现更大位置的'#'就更新
-            int top = n - 1;                //      |  --  |              ----- bottom
-            int bottom = 0;                 // n-1  --------   ----- top
+            int left = n - 1;               //  0   -------- --- bottom     寻找 bottom（max）和 top（min）        0   --------
+            int right = 0;                  //      |      |            bottom初始值为0迭代过程中遇到更大的'#'就更新       |  --  |  --- top
+            int top = n - 1;                //      |      |            top初始值为n-1迭代过程中遇到更小的'#'就更新        |  --  |  --- bottom
+            int bottom = 0;                 // n-1  -------- --- top                 ------>                   n-1  --------
             for (int col = 0; col < n; col++) {
                 String str = r.readLine();
                 for (int l = 0; l < n; l++) {
