@@ -21,28 +21,27 @@ public class BullInChinaShop2 {
         // 记录所有块 其中 pieces[0] 为完整的块  pieces[1]-pieces[k]为 k 个碎块
         pieces = new boolean[k + 1][n][n];
         // 记录所有块边缘 排除额外 '.' 的干扰
-        int[][] s = new int[k + 1][n];
-        for (int i = 0; i <= k; i++) {
-            int left = n - 1;
-            int right = 0;
-            int top = n - 1;
-            int bottom = 0;
-            for (int j = 0; j < n; j++) {
+        int[][] s = new int[k + 1][n];      // 以 bottom 记视觉上的下边界，top 记视觉上的上边界
+        for (int row = 0; row <= k; row++) {// 但因为二维数组的原点在左上角所以从索引上看bottom的值会更大
+            int left = n - 1;               //  0   -------- --- bottom     寻找 bottom（max）和 top（min）        0   --------
+            int right = 0;                  //      |      |            bottom初始值为0迭代过程中遇到更大的'#'就更新       |  --  |  --- top
+            int top = n - 1;                //      |      |            top初始值为n-1迭代过程中遇到更小的'#'就更新        |  --  |  --- bottom
+            int bottom = 0;                 // n-1  -------- --- top                 ------>                   n-1  --------
+            for (int col = 0; col < n; col++) {
                 String str = r.readLine();
                 for (int l = 0; l < n; l++) {
                     char c = str.charAt(l);
-                    pieces[i][j][l] = (c == '#');
-                    if (pieces[i][j][l]) {
-                        bottom = Math.max(bottom, j);
-                        top = Math.min(top, j);
+                    pieces[row][col][l] = (c == '#');
+                    if (pieces[row][col][l]) {
+                        bottom = Math.max(bottom, col);
+                        top = Math.min(top, col);
                         right = Math.max(right, l);
                         left = Math.min(left, l);
                     }
                 }
             }
-            s[i] = new int[]{left, right, top, bottom};
+            s[row] = new int[]{left, right, top, bottom};
         }
-
         // 遍历所有两两组合 第 i 个碎块和第 j 个碎块进行拼接
         for (int i = 1; i <= k; i++) {
             for (int j = i + 1; j <= k; j++) {
@@ -50,15 +49,35 @@ public class BullInChinaShop2 {
                 // i 块的下边界紧贴原块的上边移动到 i 块的上边界紧贴原块的下边
                 // 此处对遍历过程有优化将原本块的边界进行缩减，去除边界上填充的 '.'
                 //
-                //  ------------  0
-                //  |          |
-                //  |   ----   |  bottom
-                //  |   |  |   |
-                //  |   ----   |  top
-                //  |          |
-                //  ------------  n-1
-                // 向下移动 (n-1) - s[i][3](bottom) 步时bottom边紧贴n-1边
-                // 向上移动 s[i][2](top) 步时top边紧贴0边
+                //   0  ------------
+                //      |          |
+                //      |   ----   |  top
+                //      |   |  |   |
+                //      |   ----   |  bottom
+                //      |          |
+                //  n-1 ------------
+                //
+                //  向下移动 (n-1) - s[i][3](bottom) 步时bottom边紧贴n-1边
+                //
+                //   0  ------------
+                //      |          |
+                //      |          |
+                //      |          |
+                //      ----       |  top
+                //      |  |       |
+                //  n-1 ------------  bottom
+                //
+                //  开始遍历直到 top 边紧贴 0 边 相对于最开始的位置就是向上移动s[i][2](top) 步
+                //
+                //   0  ------------   top
+                //      |  |       |
+                //      ----       |   bottom
+                //      |          |
+                //      |          |
+                //      |          |
+                //  n-1 ------------
+                //
+                // 水平方向同理 另一块同理
                 for (int iDetalRow = s[i][3] - n + 1; iDetalRow <= s[i][2]; iDetalRow++) {
                     for (int iDetalCol = s[i][1] - n + 1; iDetalCol <= s[i][0]; iDetalCol++) {
                         // j 块同理

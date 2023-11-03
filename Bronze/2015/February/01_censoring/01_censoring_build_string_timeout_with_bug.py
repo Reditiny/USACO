@@ -14,8 +14,7 @@ i = 0
 while i <= len(S) - len(T):
     if S[i:i + len(T)] == T:
         S = S[:i] + S[i + len(T):]
-        if i >= len(T) - 1:
-            i = i - len(T)
+        i -= len(T)
     i += 1
 
 fout.write(f"{S}\n")
