@@ -10,12 +10,12 @@ fout = open("censor.out", "w")
 S = fin.readline().strip()
 T = fin.readline().strip()
 
-i = 0
-while i <= len(S) - len(T):
-    if S[i:i + len(T)] == T:
-        S = S[:i] + S[i + len(T):]
-        i -= len(T)
-    i += 1
+result = ""
 
-fout.write(f"{S}\n")
+for i in range(len(S)):
+    result += S[i]
+    if len(result) >= len(T) and result[-len(T):] == T:
+        result = result[:-len(T)]
+
+fout.write(f"{result}\n")
 fout.close()

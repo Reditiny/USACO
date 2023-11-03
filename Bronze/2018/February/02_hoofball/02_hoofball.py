@@ -32,6 +32,7 @@ while True:
     peak_pos = diff.index(peak)
     # can be multiple peak in a row in diff, but need initials to decide the order
     # without this will fail the last case
+    # for example, initials = [2,4,6], diff = [2,2], then move to furthest right
     if peak_count > 1 and peak_pos != N - 1:
         other_peak_pos = peak_pos + 1
         while other_peak_pos < N and diff[other_peak_pos] == peak:

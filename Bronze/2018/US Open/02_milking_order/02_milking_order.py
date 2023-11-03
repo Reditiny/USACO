@@ -3,7 +3,6 @@ ID: mck15821
 LANG: PYTHON3
 PROG: milkorder
 """
-from collections import Counter
 # http://www.usaco.org/index.php?page=viewproblem2&cpid=832
 fin = open('milkorder.in', 'r')
 fout = open("milkorder.out", "w")
