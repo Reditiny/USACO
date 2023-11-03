@@ -43,6 +43,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="Ad_Hoc" />
+                    <option name="lastUsedInstant" value="1698735058" />
                     <option name="branchName" value="main" />
                     <option name="lastUsedInstant" value="1698835377" />
                   </RecentBranch>
@@ -51,8 +53,8 @@
                     <option name="lastUsedInstant" value="1698833692" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="Ad_Hoc" />
-                    <option name="lastUsedInstant" value="1698648564" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1698711919" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="yesterday" />
@@ -103,6 +105,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bronze/2018/US Open/02_milking_order" />
+      <recent name="$PROJECT_DIR$/Bronze/2018/February/02_hoofball" />
+      <recent name="$PROJECT_DIR$/Bronze/2019/January/02_sleepy_cow_sorting" />
+      <recent name="$PROJECT_DIR$/Bronze/2023/US Open/01_feb" />
+      <recent name="$PROJECT_DIR$/Bronze/2017/US Open/03_modern_art" />
       <recent name="$PROJECT_DIR$/Bronze/2023/US Open/02_moo_language" />
       <recent name="$PROJECT_DIR$/Bronze/2016/US Open/02_bull_in_a_china_shop" />
       <recent name="$PROJECT_DIR$/Bronze/2020/February/01_triangles" />
@@ -371,14 +378,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698648466232</updated>
     </task>
-    <task id="LOCAL-00013" summary="Graphs">
-      <created>1698835175000</created>
+    <task id="LOCAL-00013" summary="Ad Hoc">
+      <created>1698736436333</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1698835175000</updated>
+      <updated>1698736436333</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fulfil comments of Ad Hoc">
+      <created>1698888166162</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698888166162</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,6 +420,9 @@
     <MESSAGE value="fulfill comment on search" />
     <MESSAGE value="add set-solution" />
     <MESSAGE value="update BullInChinaShop MooLanguage and Triangles Solutions" />
+    <MESSAGE value="Ad Hoc" />
+    <MESSAGE value="fulfil comments of Ad Hoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="fulfil comments of Ad Hoc" />
     <MESSAGE value="Graphs" />
     <option name="LAST_COMMIT_MESSAGE" value="Graphs" />
   </component>
