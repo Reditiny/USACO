@@ -22,13 +22,10 @@ public class MadScientist {
         // GGGGGHHGGGGGH
         // GHHHHHGHHHHGH
         int ans = 0;
-        // start == true 说明起点已经找到准备往后找终点
-        boolean start = a[0] != b[0];
-        if (start) {
-            ans++;
-        }
-        for (int i = 1; i < n; i++) {
-
+        // start == false 说明正在寻找起点
+        // start == true  说明找到起点，正在寻找终点
+        boolean start = false;
+        for (int i = 0; i < n; i++) {
             if (start && a[i] == b[i]) {
                 // 找到当前的终点，准备寻找下一个起点
                 start = false;

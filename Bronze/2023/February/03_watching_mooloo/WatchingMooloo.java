@@ -23,19 +23,15 @@ public class WatchingMooloo {
         for (int i = 0; i < n; i++) {
             watchDays.add(new BigInteger(st.nextToken()));
         }
-        watchDays.sort(BigInteger::compareTo);
         // 对于任意一天订阅有两种方式: 1.新订阅 2.上次订阅延续到今天
         BigInteger ans = BigInteger.valueOf(1 + k);
         BigInteger lastDay = watchDays.get(0);
         for (int i = 1; i < watchDays.size(); i++) {
             BigInteger curDay = watchDays.get(i);
             // 新订阅花 1+k 上次订阅到今天花 curDay - lastDay
-            // curDay - lastDay <= k 时应该选择方案2否则方案1
-            if (curDay.subtract(lastDay).compareTo(BigInteger.valueOf(k)) <= 0) {
-                ans = ans.add(curDay.subtract(lastDay));
-            } else {
-                ans = ans.add(BigInteger.valueOf(k + 1));
-            }
+            // 选择 curDay - lastDay 和  k + 1 之中较小的方案
+            // BigInteger的运算并不会改变本身的值而是返回一个新的BigInteger，它值等于运算结果
+            ans = ans.add(BigInteger.valueOf(k+1).min(curDay.subtract(lastDay)));
             lastDay = curDay;
         }
         pw.println(ans);
