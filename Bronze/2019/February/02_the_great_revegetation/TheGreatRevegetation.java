@@ -30,14 +30,15 @@ public class TheGreatRevegetation {
             graph.get(pasture1).add(pasture2);
             graph.get(pasture2).add(pasture1);
         }
-        grasses.add(1);
         // 从前往后依次确定牧场的种子
-        for (int i = 1; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             boolean[] existGrasses = new boolean[4];
             // 对于当前的 i 牧场，查看所有与 i 有边相连的 neighbor 牧场
             for (int neighbor : graph.get(i)) {
-                // 如果 neighbor 已经种过种子了就把该种子标记为已经存在，表明 i 牧场不能种该种子
+                // grasses 的index表示牧场[index]表示该牧场的种子
+                // 因为是按顺序插入所以 neighbor < grasses.size() 说明 neighbor 已经种过种子了
                 if (neighbor < grasses.size()) {
+                    // 把 neighbor 已经种的种子标记为已经存在，表明 i 牧场不能种该种子
                     existGrasses[grasses.get(neighbor) - 1] = true;
                 }
             }
