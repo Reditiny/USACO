@@ -37,9 +37,6 @@ public class WordProcessor {
                     pw.print(" ");
                 }
             }
-            if(j == n){
-                break;
-            }
             pw.println();
             i = j;
         }
