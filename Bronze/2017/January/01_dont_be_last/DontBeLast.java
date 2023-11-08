@@ -14,7 +14,7 @@ public class DontBeLast {
     static Map<String, Integer> positionMap = new HashMap<String, Integer>();
     static int ansIndex;
 
-    static {
+    public static void main(String[] args) throws Exception {
         positionMap.put("Bessie", 0);
         positionMap.put("Elsie", 1);
         positionMap.put("Daisy", 2);
@@ -22,9 +22,6 @@ public class DontBeLast {
         positionMap.put("Annabelle", 4);
         positionMap.put("Maggie", 5);
         positionMap.put("Henrietta", 6);
-    }
-
-    public static void main(String[] args) throws Exception {
         BufferedReader r = new BufferedReader(new FileReader("notlast.in"));
         PrintWriter pw = new PrintWriter(new FileWriter("notlast.out"));
         int n = Integer.parseInt(r.readLine());

@@ -15,8 +15,7 @@ public class YearOfTheCow {
     static Map<String, Integer> ageMap = new HashMap<>();
     static Map<String, String> cowZodiac = new HashMap<>();
 
-    // 静态代码块 加载类时会自动执行
-    static {
+    public static void main(String[] args) throws Exception {
         cowZodiac.put("Bessie", "Ox");
         ageMap.put("Bessie", 0);
         zodiacMap.put("Ox", 1);
@@ -31,9 +30,6 @@ public class YearOfTheCow {
         zodiacMap.put("Dog", 10);
         zodiacMap.put("Pig", 11);
         zodiacMap.put("Rat", 12);
-    }
-
-    public static void main(String[] args) throws Exception {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter pw = new PrintWriter(System.out);
         int n = Integer.parseInt(r.readLine());

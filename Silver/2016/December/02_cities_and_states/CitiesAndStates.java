@@ -2,7 +2,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.PrintWriter;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.StringTokenizer;
 
@@ -12,7 +11,7 @@ import java.util.StringTokenizer;
  */
 public class CitiesAndStates {
     static int n;
-    static Map<String, Integer> codeAndStateToCount = new HashMap<>();
+    static Map<String, Integer> cityAndStateCount = new HashMap<>();
 
     public static void main(String[] args) throws Exception {
         BufferedReader r = new BufferedReader(new FileReader("citystate.in"));
@@ -21,22 +20,19 @@ public class CitiesAndStates {
         int ans = 0;
         for (int i = 0; i < n; i++) {
             StringTokenizer st = new StringTokenizer(r.readLine());
-            String cityFirstTowCode = st.nextToken().substring(0, 2);
-            String code = st.nextToken();
-            String cityAndState = cityFirstTowCode + code;
-            String stateAndCity = code + cityFirstTowCode;
+            String cityCode = st.nextToken().substring(0, 2);
+            String stateCode = st.nextToken();
+            String cityAndState = cityCode + stateCode;
+            String stateAndCity = stateCode + cityCode;
             if (cityAndState.equals(stateAndCity)) {
                 continue;
             }
             // map 中存储 stateAndCity 的数量
             // 在遍历 cityAndState 时，如果 map 中 stateAndCity，那么该数量就符合要求的城市对
-            if (codeAndStateToCount.containsKey(cityAndState)) {
-                ans += codeAndStateToCount.get(cityAndState);
+            if (cityAndStateCount.containsKey(cityAndState)) {
+                ans += cityAndStateCount.get(cityAndState);
             }
-            if (!codeAndStateToCount.containsKey(stateAndCity)) {
-                codeAndStateToCount.put(stateAndCity, 0);
-            }
-            codeAndStateToCount.put(stateAndCity, codeAndStateToCount.get(stateAndCity) + 1);
+            cityAndStateCount.put(stateAndCity, cityAndStateCount.getOrDefault(stateAndCity,0) + 1);
         }
         pw.println(ans);
         pw.close();
