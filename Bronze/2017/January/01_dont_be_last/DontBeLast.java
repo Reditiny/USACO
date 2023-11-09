@@ -35,13 +35,13 @@ public class DontBeLast {
             int milk = Integer.parseInt(st.nextToken());
             cowToMilk.put(cow, cowToMilk.get(cow) + milk);
         }
-        // 依次确定最小值与次小值
+        // 确定最小值与次小值
         cowToMilk.forEach((cow, milk) -> {
-            minMilk = Math.min(minMilk, milk);
-        });
-        cowToMilk.forEach((cow, milk) -> {
-            if (milk > minMilk) {
-                secondMinMilk = Math.min(secondMinMilk, milk);
+            if(milk < minMilk){
+                secondMinMilk = minMilk;
+                minMilk = milk;
+            }else if(milk > minMilk && milk < secondMinMilk){
+                secondMinMilk = milk;
             }
         });
         // 计算次小值的数量以及次小值的牛
