@@ -48,13 +48,13 @@ public class YearOfTheCow {
                 if (diff <= 0) {
                     diff += 12;
                 }
-                ageMap.put(newCowName, ageMap.get(oldCowName) + diff);
+                ageMap.put(newCowName, ageMap.get(oldCowName) - diff);
             } else {
                 diff = zodiacMap.get(newCowZodiac) - zodiacMap.get(oldCowZodiac);
                 if (diff <= 0) {
                     diff += 12;
                 }
-                ageMap.put(newCowName, ageMap.get(oldCowName) - diff);
+                ageMap.put(newCowName, ageMap.get(oldCowName) + diff);
             }
         }
         pw.println(Math.abs(ageMap.get("Elsie")));

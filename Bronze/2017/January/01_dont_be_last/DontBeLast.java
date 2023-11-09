@@ -15,6 +15,9 @@ public class DontBeLast {
     static int ansIndex;
 
     public static void main(String[] args) throws Exception {
+        // map 中存储每头奶牛的位置而不是累计奶量
+        // 因为最后需要遍历所以牛奶量应该存在数组里方便遍历
+        // 而 map 的遍历是无序的
         positionMap.put("Bessie", 0);
         positionMap.put("Elsie", 1);
         positionMap.put("Daisy", 2);
