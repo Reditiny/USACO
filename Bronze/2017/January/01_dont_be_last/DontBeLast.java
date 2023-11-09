@@ -11,56 +11,50 @@ import java.util.StringTokenizer;
  * @version 1.0
  */
 public class DontBeLast {
-    static Map<String, Integer> positionMap = new HashMap<String, Integer>();
-    static int ansIndex;
+    static Map<String, Integer> cowToMilk = new HashMap<String, Integer>();
+    static int minMilk = Integer.MAX_VALUE;
+    static int secondMinMilk = Integer.MAX_VALUE;
+    static int secondCount = 0;
+    static String ansCow;
 
     public static void main(String[] args) throws Exception {
-        // map 中存储每头奶牛的位置而不是累计奶量
-        // 因为最后需要遍历所以牛奶量应该存在数组里方便遍历
-        // 而 map 的遍历是无序的
-        positionMap.put("Bessie", 0);
-        positionMap.put("Elsie", 1);
-        positionMap.put("Daisy", 2);
-        positionMap.put("Gertie", 3);
-        positionMap.put("Annabelle", 4);
-        positionMap.put("Maggie", 5);
-        positionMap.put("Henrietta", 6);
+        // map 存储每头奶牛的奶量，初始值 0 必须要给，因为有些奶牛可能不出现在产奶日志上
+        cowToMilk.put("Bessie", 0);
+        cowToMilk.put("Elsie", 0);
+        cowToMilk.put("Daisy", 0);
+        cowToMilk.put("Gertie", 0);
+        cowToMilk.put("Annabelle", 0);
+        cowToMilk.put("Maggie", 0);
+        cowToMilk.put("Henrietta", 0);
         BufferedReader r = new BufferedReader(new FileReader("notlast.in"));
         PrintWriter pw = new PrintWriter(new FileWriter("notlast.out"));
         int n = Integer.parseInt(r.readLine());
-        int[] milks = new int[positionMap.size()];
         for (int i = 0; i < n; i++) {
             StringTokenizer st = new StringTokenizer(r.readLine());
             String cow = st.nextToken();
             int milk = Integer.parseInt(st.nextToken());
-            milks[positionMap.get(cow)] += milk;
+            cowToMilk.put(cow, cowToMilk.get(cow) + milk);
         }
-        // 依次确定最小值与次小值并确定次小值索引以及次小值数量
-        int minMilk = Integer.MAX_VALUE;
-        for (int i = 0; i < milks.length; i++) {
-            minMilk = Math.min(minMilk, milks[i]);
-        }
-        int secondMinMilk = Integer.MAX_VALUE;
-        for (int i = 0; i < milks.length; i++) {
-            if (milks[i] > minMilk && milks[i] < secondMinMilk) {
-                secondMinMilk = milks[i];
-                ansIndex = i;
+        // 依次确定最小值与次小值
+        cowToMilk.forEach((cow, milk) -> {
+            minMilk = Math.min(minMilk, milk);
+        });
+        cowToMilk.forEach((cow, milk) -> {
+            if (milk > minMilk) {
+                secondMinMilk = Math.min(secondMinMilk, milk);
             }
-        }
-        int secondCount = 0;
-        for (int i = 0; i < milks.length; i++) {
-            if (milks[i] == secondMinMilk) {
+        });
+        // 计算次小值的数量以及次小值的牛
+        cowToMilk.forEach((cow, milk) -> {
+            if (milk == secondMinMilk) {
                 secondCount++;
+                ansCow = cow;
             }
-        }
+        });
         if (secondCount != 1) {
             pw.println("Tie");
         } else {
-            positionMap.forEach((cow, index) -> {
-                if (index == ansIndex) {
-                    pw.println(cow);
-                }
-            });
+            pw.println(ansCow);
         }
         pw.close();
     }
