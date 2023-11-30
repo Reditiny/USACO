@@ -10,10 +10,14 @@ import java.util.*;
 public class WormholeSort {
     static int n, m;
     static List<List<Integer>> wormholes = new ArrayList<>();
-    // unorderedCompare visited 用于判断图的连通性
+    // unorderedCompare 记录每个节点是否需要排序，用于判断是否将节点放入图中，需要排序的节点才放入图
     static boolean[] unorderedCompare;
+    // visited 配合 unorderedCompare 使用
+    // unorderedCompare 中为 true 的节点是需要遍历的，所以遍历完后要求对应 visited 为 true
     static boolean[] visited;
-    // unorderedJudge 用于判断是否开始dfs 如果没有会有case超时
+    // unorderedJudge 记录每个节点是否需要排序，用于判断是否开始dfs 如果没有会有case超时
+    // 随着 wormhole 的遍历，需要排序的节点会依次被放入图中
+    // 只有当所有需要排序的节点都在图中时才开始dfs，否则此前的遍历都是无效的
     static boolean[] unorderedJudge;
     static List<List<Integer>> graph = new ArrayList<>();
 
