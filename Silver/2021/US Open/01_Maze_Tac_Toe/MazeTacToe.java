@@ -22,6 +22,8 @@ public class MazeTacToe {
     static int startI = 0, startJ = 0;
     static int[][] moves = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
     static HashSet<Integer> answers = new HashSet<Integer>();
+    // 用于判断胜利的棋盘状态 OOM 或 MOO
+    static int[][] winning = {{2,2,1},{1,2,2}};
 
     public static void main(String[] args) throws Exception {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
@@ -117,34 +119,32 @@ public class MazeTacToe {
             }
         }
         // 判断是否胜利
+        // 行是否满足 211 或 112
         for (int r = 0; r < 3; r++) {
-            if (cells[r][0] == 1 && cells[r][1] == 2 && cells[r][2] == 2) {
-                return true;
-            }
-            if (cells[r][0] == 2 && cells[r][1] == 2 && cells[r][2] == 1) {
-                return true;
+            for (int w = 0; w < 2; w++) {
+                if (cells[r][0] == winning[w][0] && cells[r][1] == winning[w][1] && cells[r][2] == winning[w][2]) {
+                    return true;
+                }
             }
         }
+        // 列是否满足 211 或 112
         for (int c = 0; c < 3; c++) {
-            if (cells[0][c] == 1 && cells[1][c] == 2 && cells[2][c] == 2) {
+            for (int w = 0; w < 2; w++) {
+                if (cells[0][c] == winning[w][0] && cells[1][c] == winning[w][1] && cells[2][c] == winning[w][2]) {
+                    return true;
+                }
+            }
+        }
+        // 对角线是否满足 211 或 112
+        for (int w = 0; w < 2; w++) {
+            if (cells[0][0] == winning[w][0] && cells[1][1] == winning[w][1] && cells[2][2] == winning[w][2]) {
                 return true;
             }
-            if (cells[0][c] == 2 && cells[1][c] == 2 && cells[2][c] == 1) {
+            if (cells[0][2] == winning[w][0] && cells[1][1] == winning[w][1] && cells[2][0] == winning[w][2]) {
                 return true;
             }
-        }
-        if (cells[0][0] == 1 && cells[1][1] == 2 && cells[2][2] == 2) {
-            return true;
-        }
-        if (cells[0][0] == 2 && cells[1][1] == 2 && cells[2][2] == 1) {
-            return true;
-        }
-        if (cells[2][0] == 1 && cells[1][1] == 2 && cells[0][2] == 2) {
-            return true;
-        }
-        if (cells[2][0] == 2 && cells[1][1] == 2 && cells[0][2] == 1) {
-            return true;
         }
         return false;
     }
+
 }
