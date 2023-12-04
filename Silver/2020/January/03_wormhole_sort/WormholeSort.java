@@ -10,16 +10,18 @@ import java.util.*;
 public class WormholeSort {
     static int n, m;
     static List<List<Integer>> wormholes = new ArrayList<>();
-    // unorderedCompare 记录每个节点是否需要排序，用于判断是否将节点放入图中，需要排序的节点才放入图
-    static boolean[] unorderedCompare;
-    // visited 配合 unorderedCompare 使用
-    // unorderedCompare 中为 true 的节点是需要遍历的，所以遍历完后要求对应 visited 为 true
-    static boolean[] visited;
-    // unorderedJudge 记录每个节点是否需要排序，用于判断是否开始dfs 如果没有会有case超时
-    // 随着 wormhole 的遍历，需要排序的节点会依次被放入图中
-    // 只有当所有需要排序的节点都在图中时才开始dfs，否则此前的遍历都是无效的
-    static boolean[] unorderedJudge;
+    // 存储需要排序的节点的图，当所有需要排序的节点都在图中且图连通时，那就可以通过 wormhole 完成排序
     static List<List<Integer>> graph = new ArrayList<>();
+    // needSort 记录每个节点是否需要排序，用于判断是否将节点放入图中，需要排序的节点才放入图
+    static boolean[] needSort;
+    // visited 配合 needSort 使用
+    // needSort 中为 true 的节点不在最终位置上，需要用 wormhole 遍历到
+    // 所以遍历完后要求对应 visited 为 true
+    static boolean[] visited;
+    // 需要排序的节点最初都不在图内，随着 wormhole 的遍历，将节点放入图中
+    // 当所有节点都在图中时，即 outOfGraph 全为false 才开始 dfs
+    static boolean[] outOfGraph;
+
 
     public static void main(String[] args) throws Exception {
         BufferedReader r = new BufferedReader(new FileReader("wormsort.in"));
@@ -27,15 +29,15 @@ public class WormholeSort {
         StringTokenizer st = new StringTokenizer(r.readLine());
         n = Integer.parseInt(st.nextToken());
         m = Integer.parseInt(st.nextToken());
-        unorderedCompare = new boolean[n];
-        unorderedJudge = new boolean[n];
+        needSort = new boolean[n];
+        outOfGraph = new boolean[n];
         visited = new boolean[n];
         st = new StringTokenizer(r.readLine());
         for (int i = 0; i < n; i++) {
             graph.add(new ArrayList<>());
             if (i != Integer.parseInt(st.nextToken()) - 1) {
-                unorderedCompare[i] = true;
-                unorderedJudge[i] = true;
+                needSort[i] = true;
+                outOfGraph[i] = true;
             }
         }
         for (int i = 0; i < m; i++) {
@@ -59,15 +61,15 @@ public class WormholeSort {
             List<Integer> wormhole = WormholeSort.wormholes.get(i);
             int a = wormhole.get(0);
             int b = wormhole.get(1);
-            unorderedJudge[a] = false;
-            unorderedJudge[b] = false;
-            if(allFalse()){
+            outOfGraph[a] = false;
+            outOfGraph[b] = false;
+            if(!start && allFalse()){
                 // 开始 dfs 只有当所有需要排序的元素都在图中才开始
                 start = true;
             }
             ans = wormhole.get(2);
             // 只有当 wormhole 两端的元素至少有一个元素需要排序时才放入图
-            if (unorderedCompare[a] || unorderedCompare[b]) {
+            if (needSort[a] || needSort[b]) {
                 graph.get(a).add(b);
                 graph.get(b).add(a);
             }
@@ -99,7 +101,7 @@ public class WormholeSort {
      */
     static boolean match() {
         for (int i = 0; i < n; i++) {
-            if (unorderedCompare[i] && !visited[i]) {
+            if (needSort[i] && !visited[i]) {
                 return false;
             }
         }
@@ -107,7 +109,7 @@ public class WormholeSort {
     }
     static boolean allFalse(){
         for(int i=0;i<n;i++){
-            if(unorderedJudge[i]){
+            if(outOfGraph[i]){
                 return false;
             }
         }
