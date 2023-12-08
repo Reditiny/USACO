@@ -54,6 +54,7 @@ public class RedistributingGifts {
 
     /**
      * Kosaraju's 算法计算强连通分量
+     * 算法详解参见 https://blog.csdn.net/level_code/article/details/124859262 https://www.modb.pro/db/180268
      * 1. 根据原图dfs，记录dfs结束的顺序，并将顺序反转
      * 2. 反向图dfs，从起点开始，记录所有能到达的点，这些点就是一个强连通分量
      * 3. 一个强连通分量内牛可以直接获得自己喜欢的礼物

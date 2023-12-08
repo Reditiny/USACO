@@ -19,8 +19,8 @@ public class WormholeSort {
     // 所以遍历完后要求对应 visited 为 true
     static boolean[] visited;
     // 需要排序的节点最初都不在图内，随着 wormhole 的遍历，将节点放入图中
-    // 当所有节点都在图中时，即 outOfGraph 全为false 才开始 dfs
-    static boolean[] outOfGraph;
+    // 当所有节点都在图中时，即 inOfGraph 全为 true 才开始 dfs
+    static boolean[] inOfGraph;
 
 
     public static void main(String[] args) throws Exception {
@@ -30,14 +30,15 @@ public class WormholeSort {
         n = Integer.parseInt(st.nextToken());
         m = Integer.parseInt(st.nextToken());
         needSort = new boolean[n];
-        outOfGraph = new boolean[n];
+        inOfGraph = new boolean[n];
+        Arrays.fill(needSort,true);
         visited = new boolean[n];
         st = new StringTokenizer(r.readLine());
         for (int i = 0; i < n; i++) {
             graph.add(new ArrayList<>());
             if (i != Integer.parseInt(st.nextToken()) - 1) {
                 needSort[i] = true;
-                outOfGraph[i] = true;
+                inOfGraph[i] = false;
             }
         }
         for (int i = 0; i < m; i++) {
@@ -61,9 +62,9 @@ public class WormholeSort {
             List<Integer> wormhole = WormholeSort.wormholes.get(i);
             int a = wormhole.get(0);
             int b = wormhole.get(1);
-            outOfGraph[a] = false;
-            outOfGraph[b] = false;
-            if(!start && allFalse()){
+            inOfGraph[a] = true;
+            inOfGraph[b] = true;
+            if(!start && allInGraph()){
                 // 开始 dfs 只有当所有需要排序的元素都在图中才开始
                 start = true;
             }
@@ -107,9 +108,9 @@ public class WormholeSort {
         }
         return true;
     }
-    static boolean allFalse(){
+    static boolean allInGraph(){
         for(int i=0;i<n;i++){
-            if(outOfGraph[i]){
+            if(!inOfGraph[i]){
                 return false;
             }
         }
