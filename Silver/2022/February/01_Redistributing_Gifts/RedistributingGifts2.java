@@ -40,12 +40,13 @@ public class RedistributingGifts2 {
                 reachable[p][cow1] = true;
             }
         }
-        // 遍历所有可以间接得到喜欢的礼物的牛
-        // 这里仅需要考虑一个中间牛即可
-        // 如 cow1 喜欢 cow3 的礼物，cow3 喜欢 cow2 的礼物，cow2 喜欢 cow4 的礼物，cow4 喜欢 cow1 的礼物
-        // 此时并不需要 cow4 和 cow2 才能把 cow1 和 cow3 连起来
-        // 因为每次遍历都是从头开始遍历，假设 cow4 在 cow2 前被遍历到（反过来也一样），那么遍历到 cow4 时，cow1 和 cow2 的连通性已经被确定了
-        // 由此可确定不管中间有多少牛，每次迭代都会减少一个中间牛，最终的表现就是只需要考虑一个中间牛即可
+        // 已知 reachable[p][cow1] 一定为 true 但 reachable[cow1][p] 未知
+        // 当 reachable[cow1][p] 为 true 时，cow1 和 p 可以构成环，即 cow1 可以获得 p 的礼物
+        // 例如 A,B,C 三头牛，其中A喜欢B的礼物，B喜欢C的礼物，C喜欢A的礼物
+        // 有 reachable[B][A] = true, reachable[C][B] = true, reachable[A][C] = true
+        // 通过传递性得到 reachable[C][A] = true, 说明 C 最后会得到 A 的礼物
+        // 最后考虑为什么 cow2 中间牛要放在最外层循环，因为任意一头牛作为中间牛时，都需要考虑所有的牛的两两组合能否通过 cow2 作为中间牛而连通
+        // 只有当 cow2 在最外层时，内层的循环可以在当前 cow2 下完成所有的两两组合的判断
         for (int cow2 = 1; cow2 <= N; cow2++) {
             for (int cow1 = 1; cow1 <= N; cow1++) {
                 for (int cow3 = 1; cow3 <= N; cow3++) {
