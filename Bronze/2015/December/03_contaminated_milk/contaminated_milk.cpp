@@ -14,12 +14,13 @@ int main() {
     cin >> n >> m >> d >> s;
     // 记录喝牛奶的信息[人,奶,时间]
     vector<vector<int>> drink_info;
-    unordered_set<int> target_milk;
+    // 记录可能被污染的牛奶
+    unordered_set<int> likely_contaminated_milk;
     for (int i = 0; i < d; i++) {
         vector<int> info(3);
         cin >> info[0] >> info[1] >> info[2];
         drink_info.push_back(info);
-        target_milk.insert(info[1]);
+        likely_contaminated_milk.insert(info[1]);
     }
     // 按人员编号排序 编号相同时按时间排序 为了满足后续双指针实现
     sort(drink_info.begin(), drink_info.end(), [](const vector<int>& a, const vector<int>& b) {
@@ -44,6 +45,7 @@ int main() {
     for (int i = 0; i < s; i++) {
         int cur_sick_person = sick_info[i][0];
         int cur_sick_time = sick_info[i][1];
+        // 找到当前生病人喝过的牛奶
         unordered_set<int> candidate_milk;
         while (j < d && drink_info[j][0] < cur_sick_person) {
             j++;
@@ -54,9 +56,10 @@ int main() {
             }
             j++;
         }
-        for (auto it = target_milk.begin(); it != target_milk.end();) {
+        // 遍历target中的每一个牛奶，如果candidate里面没有则移除掉
+        for (auto it = likely_contaminated_milk.begin(); it != likely_contaminated_milk.end();) {
             if (candidate_milk.find(*it) == candidate_milk.end()) {
-                it = target_milk.erase(it);
+                it = likely_contaminated_milk.erase(it);
             } else {
                 ++it;
             }
@@ -66,7 +69,7 @@ int main() {
     unordered_set<int> sick_person;
 
     for (int i = 0; i < d; i++) {
-        if (target_milk.find(drink_info[i][1]) != target_milk.end()) {
+        if (likely_contaminated_milk.find(drink_info[i][1]) != likely_contaminated_milk.end()) {
             sick_person.insert(drink_info[i][0]);
         }
     }
