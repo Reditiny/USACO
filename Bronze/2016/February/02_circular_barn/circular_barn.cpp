@@ -20,6 +20,7 @@ int main() {
     }
 
     // 从零号房间进入的总距离
+    // 0 号房间的牛不需要走路，1 号房间的牛需要走 1 步，2 号房间的牛需要走 2 步，以此类推
     int last_distance = 0;
     for (int i = 1; i < n; i++) {
         last_distance += i * rooms[i];
@@ -29,8 +30,11 @@ int main() {
     int min_distance = last_distance;
     for (int i = 1; i < n; i++) {
         // 当入口从 i 改为 i+1 时，相对于 i 为入口时的距离，
-        // i 号房间的牛要多走一圈，其他牛都少走 1 步
-        int cur_distance = last_distance - (cow_count - rooms[i - 1]) + (n - 1) * rooms[i - 1];
+        // i 号房间的牛要多走一圈
+        int more_distance = (n - 1) * rooms[i - 1];
+        // 其他牛都少走 1 步
+        int less_distance = cow_count - rooms[i - 1];
+        int cur_distance = last_distance - less_distance + more_distance;
         if (cur_distance < min_distance) {
             min_distance = cur_distance;
         }
