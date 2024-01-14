@@ -105,6 +105,7 @@ public class WalkingHome {
                 if (grid[i][j] == '.') {
                     valid = 1;
                 }
+                // RDRD
                 for (int a = 0; a < N; a++) {
                     if (a <= i && grid[a][j] == 'H') {
                         valid = 0;
@@ -124,6 +125,7 @@ public class WalkingHome {
                 if (grid[i][j] == '.') {
                     valid = 1;
                 }
+                // DRDR
                 for (int a = 0; a < N; a++) {
                     if (a <= i && grid[a][0] == 'H') {
                         valid = 0;

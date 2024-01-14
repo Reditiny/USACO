@@ -31,8 +31,7 @@ public class Photoshoot {
         // 当确定a[0]时即可确定所有的 a[i]
         // 1 <= a[0] <= N
         for (int a0 = 1; a0 <= N; a0++) {
-            makeAByA0(a0);
-            if (checkA()) {
+            if (makeAByA0(a0)) {
                 break;
             }
         }
@@ -46,20 +45,14 @@ public class Photoshoot {
 
     /**
      * 根据 a[0] 计算出所有的 a[i]
+     * 并且检查是否满足条件
      */
-    static void makeAByA0(int a0) {
+    static boolean makeAByA0(int a0) {
+        visited = new boolean[N];
         a[0] = a0;
         for (int i = 1; i < N; i++) {
             a[i] = b[i - 1] - a[i - 1];
-        }
-    }
-
-    /**
-     * 检查 a[i] 是否满足条件
-     */
-    static boolean checkA() {
-        visited = new boolean[N];
-        for (int i = 0; i < N; i++) {
+            // 当 a[i] 不满足条件时，直接返回 false
             if (a[i] <= 0 || a[i] > N || visited[a[i] - 1]) {
                 return false;
             }

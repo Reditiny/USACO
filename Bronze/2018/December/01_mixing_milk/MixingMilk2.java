@@ -22,9 +22,9 @@ public class MixingMilk2 {
         for(int i = 0; i < 100; i++) {
             int from = i % 3;
             int to = (i + 1) % 3;
-            int mount = Math.min(bucketCurMilk[from], bucketCapacity[to] - bucketCurMilk[to]);
-            bucketCurMilk[from] -= mount;
-            bucketCurMilk[to] += mount;
+            int amount = Math.min(bucketCurMilk[from], bucketCapacity[to] - bucketCurMilk[to]);
+            bucketCurMilk[from] -= amount;
+            bucketCurMilk[to] += amount;
         }
         for (int i = 0; i < 3; i++) {
             pw.println(bucketCurMilk[i]);

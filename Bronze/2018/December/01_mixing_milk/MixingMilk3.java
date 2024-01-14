@@ -1,17 +1,18 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.PrintWriter;
+import java.util.HashMap;
 import java.util.StringTokenizer;
 
 /**
  * @author Red
  * @version 1.0
  */
-public class MixingMilk {
+public class MixingMilk3 {
     static int bucketCount = 3;
     static int cyclePourTimes = 100 / bucketCount;
+    static HashMap<int[], Integer> statusToCount = new HashMap<>();
     static int[] bucketCapacity = new int[bucketCount];
-    static int[] bucketInitMilk = new int[bucketCount];
     static int[] bucketCurMilk = new int[bucketCount];
 
     public static void main(String[] args) throws Exception {
@@ -20,20 +21,29 @@ public class MixingMilk {
         for (int i = 0; i < bucketCount; i++) {
             StringTokenizer st = new StringTokenizer(r.readLine());
             bucketCapacity[i] = Integer.parseInt(st.nextToken());
-            bucketInitMilk[i] = Integer.parseInt(st.nextToken());
-            bucketCurMilk[i] = bucketInitMilk[i];
+            bucketCurMilk[i] = Integer.parseInt(st.nextToken());
         }
-        // 寻找周期 即经过 cycle 次操作后，序列回到原来的状态
-        int cycle = 0;
+        int curCycle = 0;
+        statusToCount.put(bucketCurMilk, curCycle);
+        // 寻找周期 startCycle 到 endCycle 为一次循环
+        int startCycle = 0;
+        int endCycle = 0;
         while (true) {
             pour3Times();
-            cycle++;
-            if (cycle == cyclePourTimes || matchInit()) {
+            curCycle++;
+            if(curCycle == cyclePourTimes) {
                 break;
             }
+            if (statusToCount.containsKey(bucketCurMilk)){
+                startCycle = statusToCount.get(bucketCurMilk);
+                endCycle = curCycle;
+                break;
+            }
+            statusToCount.put(bucketCurMilk, curCycle);
         }
-        // 最后仅需要进行 k % cycle + 1 次操作即可
-        int pourTimes = cyclePourTimes % cycle;
+        // 前 startCycle 次操作到达循环的初始状态，然后开始 endCycle - startCycle 长度的循环
+        // 最后仅需 (cyclePourTimes - startCycle) % (endCycle - startCycle) 次操作即可
+        int pourTimes = (cyclePourTimes - startCycle) % (endCycle - startCycle);
         for (int i = 0; i < pourTimes; i++) {
             pour3Times();
         }
@@ -42,18 +52,6 @@ public class MixingMilk {
             pw.println(bucketCurMilk[i]);
         }
         pw.close();
-    }
-
-    /**
-     * 判断当前桶的牛奶是否与初始状态相同
-     */
-    private static boolean matchInit() {
-        for (int i = 0; i < bucketCount; i++) {
-            if (bucketCurMilk[i] != bucketInitMilk[i]) {
-                return false;
-            }
-        }
-        return true;
     }
 
     /**
