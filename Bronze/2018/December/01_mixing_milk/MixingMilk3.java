@@ -25,9 +25,8 @@ public class MixingMilk3 {
         }
         int curCycle = 0;
         statusToCount.put(bucketCurMilk, curCycle);
-        // 寻找周期 startCycle 到 endCycle 为一次循环
-        int startCycle = 0;
-        int endCycle = 0;
+        // 寻找周期
+        int cycleSize = 100;
         while (true) {
             pour3Times();
             curCycle++;
@@ -35,15 +34,13 @@ public class MixingMilk3 {
                 break;
             }
             if (statusToCount.containsKey(bucketCurMilk)){
-                startCycle = statusToCount.get(bucketCurMilk);
-                endCycle = curCycle;
+                cycleSize = statusToCount.get(bucketCurMilk) - curCycle;
                 break;
             }
             statusToCount.put(bucketCurMilk, curCycle);
         }
-        // 前 startCycle 次操作到达循环的初始状态，然后开始 endCycle - startCycle 长度的循环
-        // 最后仅需 (cyclePourTimes - startCycle) % (endCycle - startCycle) 次操作即可
-        int pourTimes = (cyclePourTimes - startCycle) % (endCycle - startCycle);
+        // cyclePourTimes - curCycle 为寻找周期后剩余的次数 cycleSize 为周期的长度
+        int pourTimes = (cyclePourTimes - curCycle) % cycleSize;
         for (int i = 0; i < pourTimes; i++) {
             pour3Times();
         }
@@ -56,6 +53,9 @@ public class MixingMilk3 {
 
     /**
      * 每个桶都倒一次
+     * 当需要寻找周期时，要保证每次的操作一样，“第一个桶往第二桶倒”和“第二个桶往第三个桶倒”两者并不是同样的操作
+     * 例如1号是空的，2号和3号都是满的，这时从1号倒入2号，或者2号倒入3号，状态是不变的，但周期明显不是1，就是因为两次的操作不一样
+     * 因此选择“每个桶都倒一次”作为一次操作，这样可以保证每次的操作都是一样的
      */
     static void pour3Times() {
         for (int i = 0; i < bucketCount; i++) {
