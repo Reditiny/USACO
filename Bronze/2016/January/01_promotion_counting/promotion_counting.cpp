@@ -6,8 +6,10 @@ using namespace std;
 int main() {
     freopen("promote.in", "r", stdin);
     freopen("promote.out", "w", stdout);
-    // 一维 bronze silver gold platinum
-    // 二维 before after
+    // [[bronze_before, bronze_after],
+    //  [silver_before, silver_after],
+    //  [gold_before, gold_after],
+    //  [platinum_before, platinum_after]]
     int participants[4][2];
     int ans[3] = {0};
 
