@@ -1,10 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <unordered_set>
-#include <map>
 #include <string>
-
+#include <unordered_map>
 using namespace std;
 
 int main() {
@@ -22,7 +20,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> plain[i];
     }
-    map<char, int> char_to_int;
+    unordered_map<char, int> char_to_int;
     char_to_int['A'] = 0;
     char_to_int['C'] = 1;
     char_to_int['G'] = 2;

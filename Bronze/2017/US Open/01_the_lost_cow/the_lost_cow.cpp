@@ -21,21 +21,21 @@ int main() {
             step += pow(2, power) + 2 * pow(2, power + 1);
             power += 2;
             step += pow(2, power);
-            current_position = farmer_position + static_cast<int>(pow(2, power));
+            current_position = farmer_position + pow(2, power);
         }
         step -= (current_position - cow_position);
         cout << step << endl;
     } else {
         int step = 4;   // 从原点先向右1步，回到原点1步，再向左2步
         int power = 1;
-        int currentPosition = farmer_position - 2;
-        while (cow_position < currentPosition) {
+        int current_position = farmer_position - 2;
+        while (cow_position < current_position) {
             step += pow(2, power) + 2 * pow(2, power + 1);
             power += 2;
             step += pow(2, power);
-            currentPosition = farmer_position - static_cast<int>(pow(2, power));
+            current_position = farmer_position - pow(2, power);
         }
-        step -= (cow_position - currentPosition);
+        step -= (cow_position - current_position);
         cout << step << endl;
     }
     return 0;
