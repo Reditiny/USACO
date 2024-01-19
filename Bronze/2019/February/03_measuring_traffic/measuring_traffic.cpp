@@ -20,7 +20,7 @@ int main() {
         fin >> type_list[i] >> min_list[i] >> max_list[i];
     }
     int min_traffic = 0, max_traffic = 1000;
-    // 从前往后依次合并每个Sensor的数据
+    // 从前往后依次合并每个Sensor的数据，不断缩小范围
     for (int i = n - 1; i >= 0; i--) {
         if (type_list[i] == "none") {
             min_traffic = max(min_traffic, min_list[i]);
@@ -32,6 +32,8 @@ int main() {
             max_traffic -= min_list[i];
             min_traffic -= max_list[i];
         }
+        // 因为 min 是下界，所以无论怎么放缩都不能小于 0
+        // 而 max 是上界，无需考虑 0 影响
         min_traffic = max(0, min_traffic);
     }
     fout << min_traffic << " " << max_traffic << endl;
