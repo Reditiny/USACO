@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <set>
+#include <unordered_set>
 
 using namespace std;
 
@@ -12,7 +12,7 @@ int main() {
     int n, m;
     fin >> n >> m;
 
-    vector<set<int>> graph(n);
+    vector<unordered_set<int>> graph(n);
     vector<int> grasses(n, 0);
     // 记录牧场的边关系(一头牛喜欢的两个牧场之间有条边) 邻接表 有边相连的牧场不能种相同的种子
     for (int i = 0; i < m; i++) {
@@ -23,7 +23,7 @@ int main() {
     }
     // 从前往后依次确定牧场的种子
     for (int i = 0; i < n; i++) {
-        set<int> exist_grasses;
+        unordered_set<int> exist_grasses;
         // 对于当前的 i 牧场，查看所有与 i 有边相连的 neighbor 牧场
         for (int neighbor : graph[i]) {
             // grasses[neighbor] 表示 neighbor 牧场种的种子
