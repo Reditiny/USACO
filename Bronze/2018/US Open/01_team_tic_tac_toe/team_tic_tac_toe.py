@@ -26,12 +26,9 @@ def team_win(target1, target2, board):
         return True
     return False
 def match2(target1, target2, c1, c2, c3):
-    return (c1 == target1 and c2 == target2 and c3 == target2) or \
-        (c1 == target2 and c2 == target1 and c3 == target2) or \
-        (c1 == target2 and c2 == target2 and c3 == target1) or \
-        (c1 == target2 and c2 == target1 and c3 == target1) or \
-        (c1 == target1 and c2 == target2 and c3 == target1) or \
-        (c1 == target1 and c2 == target1 and c3 == target2)
+    char_set = set([c1, c2, c3])
+    if len(char_set) == 2 and target1 in char_set and target2 in char_set:
+        return True
 
 board = [list(fin.readline().strip()) for _ in range(3)]
 single_count = 0
