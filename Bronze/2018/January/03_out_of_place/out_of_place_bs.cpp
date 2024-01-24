@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <set>
+#include <unordered_set>
 
 using namespace std;
 
@@ -77,16 +77,16 @@ int main() {
     }
 
     int swaps;
-    set<int> uniqueElements;
+    unordered_set<int> unique_elements;
 
     if (direction > 0) {
         int new_location = binary_search(places, places[bessie], direction, bessie + 1, N - 1);
-        uniqueElements.insert(places.begin() + bessie + 1, places.begin() + new_location + 1);
-        swaps = uniqueElements.size();
+        unique_elements.insert(places.begin() + bessie + 1, places.begin() + new_location + 1);
+        swaps = unique_elements.size();
     } else {
         int new_location = binary_search(places, places[bessie], direction, 0, bessie - 1);
-        uniqueElements.insert(places.begin() + new_location, places.begin() + bessie);
-        swaps = uniqueElements.size();
+        unique_elements.insert(places.begin() + new_location, places.begin() + bessie);
+        swaps = unique_elements.size();
     }
 
     fout << swaps << endl;
