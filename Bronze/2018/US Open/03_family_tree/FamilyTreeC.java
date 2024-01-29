@@ -90,7 +90,9 @@ public class FamilyTreeC {
         pw.close();
     }
 
-    // return distance between source and target
+    /**
+     * 返回 sourceCow 到 targetCow 的辈份距离
+     */
     static int getAncestorDistance(TreeNode sourceCow, TreeNode targetCow) {
         int distance = 0;
         TreeNode node = sourceCow;
@@ -104,12 +106,14 @@ public class FamilyTreeC {
         return -1;
     }
 
-    static class TreeNode {
-        String name;
-        TreeNode mother;
-        List<TreeNode> children = new ArrayList<>();
-        TreeNode(String name) {
-            this.name = name;
-        }
+
+}
+
+class TreeNode {
+    String name;
+    TreeNode mother;
+    List<TreeNode> children = new ArrayList<>();
+    TreeNode(String name) {
+        this.name = name;
     }
 }
