@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
  * @author Red
  * @version 1.0
  */
-public class RotateAndShift3 {
+public class RotateAndShift2 {
     static int N, K, T;
     static int[] A;
     static int[] ans;
